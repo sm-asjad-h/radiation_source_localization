@@ -1,1 +1,38 @@
+# --- Datasets & Data ---
+# Ignore all CSV, Excel, and pickle files
+*.csv
+*.xlsx
+*.pkl
+*.parquet
+datasets/
+data/
 
+# --- Models & Weights ---
+# Ignore saved model binaries and checkpoints
+*.pth
+*.pt
+*.h5
+*.ckpt
+models/
+
+# --- Python & Environment ---
+# Compiled python files
+__pycache__/
+*.py[cod]
+
+# Virtual environments and secrets
+venv/
+env/
+.env
+
+# --- Jupyter Notebooks ---
+# Ignore checkpoints created by Jupyter/Colab
+.ipynb_checkpoints/
+
+# --- System / OS Junk ---
+.DS_Store
+Thumbs.db
+
+# IDE settings (VS Code, PyCharm)
+.vscode/
+.idea/
