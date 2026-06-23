@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def apply_log(df, drop=False):
+def apply_log(df):
     df = df.copy()
     intensity_cols = ['det1_I', 'det2_I', 'det3_I']
     for col in intensity_cols:
