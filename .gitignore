@@ -4,8 +4,6 @@
 *.xlsx
 *.pkl
 *.parquet
-datasets/
-data/
 
 # --- Models & Weights ---
 # Ignore saved model binaries and checkpoints
@@ -13,17 +11,6 @@ data/
 *.pt
 *.h5
 *.ckpt
-models/
-
-# --- Python & Environment ---
-# Compiled python files
-__pycache__/
-*.py[cod]
-
-# Virtual environments and secrets
-venv/
-env/
-.env
 
 # --- Jupyter Notebooks ---
 # Ignore checkpoints created by Jupyter/Colab
