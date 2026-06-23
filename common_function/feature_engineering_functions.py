@@ -51,6 +51,7 @@ def add_relative_coordinates(df):
     df['rel_det2_y'] = df['det2_y'] - df['anchor_y']
     df['rel_det3_x'] = df['det3_x'] - df['anchor_x']
     df['rel_det3_y'] = df['det3_y'] - df['anchor_y']
+    #df = df.drop(columns=['anchor_x', 'anchor_y'])
     return df
 
 def sort_detectors_by_intensity(df):
