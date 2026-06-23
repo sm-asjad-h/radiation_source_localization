@@ -15,7 +15,15 @@
 # --- Jupyter Notebooks ---
 # Ignore checkpoints created by Jupyter/Colab
 .ipynb_checkpoints/
+# --- Python & Environment ---
+# Compiled python files
+__pycache__/
+*.py[cod]
 
+# Virtual environments and secrets
+venv/
+env/
+.env
 # --- System / OS Junk ---
 .DS_Store
 Thumbs.db
