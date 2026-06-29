@@ -37,10 +37,10 @@ def train_int_models(X_train, y_train, X_test):
     svm_model_intensity.fit(X_train, y_train)
 
     models_preds = {
-        "Decision Tree Intensity": pd.Series(dt_model_intensity.predict(X_test), index=test_index),
-        "Random Forest Intensity": pd.Series(rf_model_intensity.predict(X_test), index=test_index),
-        "XGBoost Intensity": pd.Series(xgb_model_intensity.predict(X_test), index=test_index),
-        "SVM Intensity": pd.Series(svm_model_intensity.predict(X_test), index=test_index)
+        "Decision Tree Intensity": pd.Series(dt_model_intensity.predict(X_test), index=X_test.index),
+        "Random Forest Intensity": pd.Series(rf_model_intensity.predict(X_test), index=X_test.index),
+        "XGBoost Intensity": pd.Series(xgb_model_intensity.predict(X_test), index=X_test.index),
+        "SVM Intensity": pd.Series(svm_model_intensity.predict(X_test), index=X_test.index)
     }
     return models_preds
 def train_int_models_log(X_train, y_train, X_test):
