@@ -1,5 +1,6 @@
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+import pandas as pd
 def split_and_scale_data(df, scale=True):
     df = df.copy()
     X = df.drop(columns=['source_x', 'source_y', 'I_0'])
