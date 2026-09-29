@@ -1,0 +1,77 @@
+Loading and Engineering Data...
+Data Split -> Train: 210018 | Val: 44982 | Test: 45000
+
+Starting Training...
+Epoch 001 | Train MSE: 0.3817 | Val MSE: 0.2390 | Best: 0.2390
+Epoch 010 | Train MSE: 0.1810 | Val MSE: 0.1851 | Best: 0.1851
+Epoch 020 | Train MSE: 0.1749 | Val MSE: 0.1816 | Best: 0.1814
+Epoch 030 | Train MSE: 0.1725 | Val MSE: 0.1809 | Best: 0.1800
+Epoch 040 | Train MSE: 0.1711 | Val MSE: 0.1817 | Best: 0.1789
+Epoch 050 | Train MSE: 0.1701 | Val MSE: 0.1793 | Best: 0.1785
+Epoch 060 | Train MSE: 0.1692 | Val MSE: 0.1789 | Best: 0.1785
+Epoch 070 | Train MSE: 0.1683 | Val MSE: 0.1786 | Best: 0.1782
+Epoch 080 | Train MSE: 0.1678 | Val MSE: 0.1785 | Best: 0.1781
+Epoch 090 | Train MSE: 0.1674 | Val MSE: 0.1787 | Best: 0.1779
+Epoch 100 | Train MSE: 0.1667 | Val MSE: 0.1784 | Best: 0.1779
+Epoch 110 | Train MSE: 0.1649 | Val MSE: 0.1779 | Best: 0.1775
+Epoch 120 | Train MSE: 0.1644 | Val MSE: 0.1772 | Best: 0.1770
+Epoch 130 | Train MSE: 0.1641 | Val MSE: 0.1773 | Best: 0.1770
+Epoch 140 | Train MSE: 0.1629 | Val MSE: 0.1769 | Best: 0.1767
+Epoch 150 | Train MSE: 0.1627 | Val MSE: 0.1767 | Best: 0.1766
+Epoch 160 | Train MSE: 0.1625 | Val MSE: 0.1768 | Best: 0.1766
+Epoch 170 | Train MSE: 0.1619 | Val MSE: 0.1767 | Best: 0.1765
+Epoch 180 | Train MSE: 0.1618 | Val MSE: 0.1768 | Best: 0.1765
+Epoch 190 | Train MSE: 0.1617 | Val MSE: 0.1766 | Best: 0.1765
+Epoch 200 | Train MSE: 0.1616 | Val MSE: 0.1767 | Best: 0.1765
+Epoch 210 | Train MSE: 0.1613 | Val MSE: 0.1765 | Best: 0.1765
+Epoch 220 | Train MSE: 0.1612 | Val MSE: 0.1766 | Best: 0.1765
+Epoch 230 | Train MSE: 0.1610 | Val MSE: 0.1765 | Best: 0.1765
+Epoch 240 | Train MSE: 0.1610 | Val MSE: 0.1765 | Best: 0.1765
+Epoch 250 | Train MSE: 0.1609 | Val MSE: 0.1765 | Best: 0.1765
+Epoch 260 | Train MSE: 0.1608 | Val MSE: 0.1765 | Best: 0.1765
+Epoch 270 | Train MSE: 0.1608 | Val MSE: 0.1765 | Best: 0.1765
+Epoch 280 | Train MSE: 0.1608 | Val MSE: 0.1765 | Best: 0.1765
+Epoch 290 | Train MSE: 0.1608 | Val MSE: 0.1765 | Best: 0.1765
+Epoch 300 | Train MSE: 0.1607 | Val MSE: 0.1765 | Best: 0.1765
+
+Training Complete! Artifacts saved in 'artifacts/' folder.
+training complete for mlp
+Loading Model and Test Data...
+Running Inference...
+Post-processing predictions...
+Generating Plots...
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/mlp/plots
+
+--- Standard Location Metrics ---
+PyTorch_MLP -> MAE: [2.33766645 2.34437503] | MSE: [13.05273055 13.13067261]
+
+--- Location Error Statistics (Euclidean Distance) ---
+PyTorch_MLP:
+  MSE:     26.183403166055587
+  Mean:    3.6750526932687433
+  Median:  2.4605264173712924
+  Minimum: 0.003949594269995794
+  Maximum: 24.088224674846714
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/mlp/plots
+
+--- Intensity Prediction Metrics ---
+PyTorch_MLP:
+  MSE: 3906198.2367570903 µCi*µCi
+  MAE:   1532.0028276626924 µCi
+  NRMSE: 0.2600540055765948
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Testing Complete! Check your plots directory.

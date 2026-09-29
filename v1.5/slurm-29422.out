@@ -1,0 +1,47 @@
+[I 2026-07-10 15:33:13,851] A new study created in RDB with name: gnn_radiation_study_phase2_batch_lr
+[I 2026-07-10 16:07:47,076] Trial 0 finished with value: 0.014109669394956694 and parameters: {'batch_size': 512, 'lr': 0.0005454869072128315}. Best is trial 0 with value: 0.014109669394956694.
+[I 2026-07-10 16:22:01,199] Trial 1 finished with value: 0.015299984308414989 and parameters: {'batch_size': 8192, 'lr': 0.0014314979381687542}. Best is trial 0 with value: 0.014109669394956694.
+[I 2026-07-10 16:56:42,967] Trial 2 finished with value: 0.014531420616639985 and parameters: {'batch_size': 512, 'lr': 0.0009550747329289534}. Best is trial 0 with value: 0.014109669394956694.
+[I 2026-07-10 17:12:50,834] Trial 3 finished with value: 0.015416961560646692 and parameters: {'batch_size': 2048, 'lr': 0.0025594922207927253}. Best is trial 0 with value: 0.014109669394956694.
+[I 2026-07-10 17:47:02,827] Trial 4 finished with value: 0.014126980811688635 and parameters: {'batch_size': 512, 'lr': 0.00011479330463998168}. Best is trial 0 with value: 0.014109669394956694.
+[I 2026-07-10 17:48:57,245] Trial 5 pruned. 
+[I 2026-07-10 17:49:54,166] Trial 6 pruned. 
+[I 2026-07-10 17:50:49,812] Trial 7 pruned. 
+[I 2026-07-10 17:51:45,249] Trial 8 pruned. 
+[I 2026-07-10 17:52:45,506] Trial 9 pruned. 
+[I 2026-07-10 17:54:00,766] Trial 10 pruned. 
+[I 2026-07-10 17:55:53,681] Trial 11 pruned. 
+[I 2026-07-10 17:57:49,434] Trial 12 pruned. 
+[I 2026-07-10 18:31:19,836] Trial 13 finished with value: 0.013753082313802506 and parameters: {'batch_size': 512, 'lr': 0.000305860862818406}. Best is trial 13 with value: 0.013753082313802506.
+[I 2026-07-10 19:01:48,857] Trial 14 finished with value: 0.013964762049913407 and parameters: {'batch_size': 512, 'lr': 0.0003403392825941156}. Best is trial 13 with value: 0.013753082313802506.
+[I 2026-07-10 19:02:41,471] Trial 15 pruned. 
+[I 2026-07-10 19:03:52,825] Trial 16 pruned. 
+[I 2026-07-10 19:06:05,314] Trial 17 pruned. 
+[I 2026-07-10 19:24:03,136] Trial 18 pruned. 
+[I 2026-07-10 19:27:09,154] Trial 19 pruned. 
+[I 2026-07-10 19:28:28,148] Trial 20 pruned. 
+[I 2026-07-10 19:35:12,310] Trial 21 pruned. 
+[I 2026-07-10 19:37:13,795] Trial 22 pruned. 
+[I 2026-07-10 19:42:31,972] Trial 23 pruned. 
+[I 2026-07-10 19:43:48,856] Trial 24 pruned. 
+[I 2026-07-10 19:46:48,598] Trial 25 pruned. 
+[I 2026-07-10 19:49:06,219] Trial 26 pruned. 
+[I 2026-07-10 20:00:05,361] Trial 27 pruned. 
+[I 2026-07-10 20:02:05,524] Trial 28 pruned. 
+[I 2026-07-10 20:02:58,241] Trial 29 pruned. 
+Targeting GPU: cuda
+Loading graphs into CPU memory...
+
+==================================================
+?? INIT OPTUNA PHASE 2: BATCH SIZE & LR TUNING ??
+==================================================
+Loaded Phase 2 study. 0 trials completed out of 30.
+
+==================================================
+?? PHASE 2 TUNING COMPLETE ??
+==================================================
+Best Phase 2 Setup:
+  Value (Validation MSE): 0.013753082313802506
+  Params: 
+    batch_size: 512
+    lr: 0.000305860862818406

@@ -1,0 +1,78 @@
+
+TRAINING DecisionTreeRegressor
+ Training DecisionTreeRegressor Location
+Completed in 1.56 seconds.
+ Training DecisionTreeRegressor Intensity
+Completed in 1.65 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.0/models/decision_tree/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [2.93536294 2.9278634 ] | MSE: [16.28257342 15.76072312]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     32.04329653104711
+  Mean:    4.599722210556893
+  Median:  3.7605850224158717
+  Minimum: 0.028820844205850987
+  Maximum: 21.826092529853312
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.0/models/decision_tree/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 2739540.171425577 µCi*µCi
+  MAE:   1221.712951257867 µCi
+  NRMSE: 0.21778363599951348
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+TRAINING DecisionTreeRegressor
+ Training DecisionTreeRegressor Location
+Completed in 1.58 seconds.
+ Training DecisionTreeRegressor Intensity
+Completed in 1.76 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.1/models/decision_tree/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [2.46560634 2.44736582] | MSE: [11.0368455  11.07647337]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     22.11331886672039
+  Mean:    3.883056676687894
+  Median:  3.302633682392382
+  Minimum: 0.00947035830053289
+  Maximum: 19.396892901280083
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.1/models/decision_tree/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 2413792.029289296 µCi*µCi
+  MAE:   1127.5421480568334 µCi
+  NRMSE: 0.20442609473332207
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+

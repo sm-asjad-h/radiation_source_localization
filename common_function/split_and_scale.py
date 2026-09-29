@@ -14,7 +14,7 @@ def split_and_scale_data(df, scale=True):
     y_test_int = y_test['I_0']
 
     X_test_unscaled = X_test.copy()
-
+    
     if scale:
         scaler = StandardScaler()
         X_train = pd.DataFrame(scaler.fit_transform(X_train), columns=X.columns, index=X_train.index)

@@ -1,0 +1,75 @@
+Locking all random seeds to 42...
+Targeting isolated GPU. PyTorch device index: cuda
+Loading graphs from storage...
+Configuring dynamic DataLoaders with batch size 1024...
+Executing Dynamic Training Loop...
+Epoch 0001 | LR: 0.002806 | Train MSE: 0.26009 | Val MSE: 0.19358 (Best: 0.19358)
+Epoch 0010 | LR: 0.002806 | Train MSE: 0.17615 | Val MSE: 0.17545 (Best: 0.17545)
+Epoch 0020 | LR: 0.002806 | Train MSE: 0.17481 | Val MSE: 0.17419 (Best: 0.17419)
+Epoch 0030 | LR: 0.002806 | Train MSE: 0.17354 | Val MSE: 0.17482 (Best: 0.17274)
+Epoch 0040 | LR: 0.002806 | Train MSE: 0.17296 | Val MSE: 0.17289 (Best: 0.17160)
+Epoch 0050 | LR: 0.001403 | Train MSE: 0.17033 | Val MSE: 0.17136 (Best: 0.17040)
+Epoch 0060 | LR: 0.000702 | Train MSE: 0.16917 | Val MSE: 0.16968 (Best: 0.16968)
+Epoch 0070 | LR: 0.000702 | Train MSE: 0.16878 | Val MSE: 0.17014 (Best: 0.16953)
+Epoch 0080 | LR: 0.000351 | Train MSE: 0.16787 | Val MSE: 0.16931 (Best: 0.16931)
+Epoch 0090 | LR: 0.000351 | Train MSE: 0.16771 | Val MSE: 0.16942 (Best: 0.16910)
+Epoch 0100 | LR: 0.000175 | Train MSE: 0.16722 | Val MSE: 0.16902 (Best: 0.16889)
+Epoch 0110 | LR: 0.000088 | Train MSE: 0.16690 | Val MSE: 0.16889 (Best: 0.16889)
+Epoch 0120 | LR: 0.000088 | Train MSE: 0.16682 | Val MSE: 0.16874 (Best: 0.16874)
+Epoch 0130 | LR: 0.000088 | Train MSE: 0.16680 | Val MSE: 0.16895 (Best: 0.16874)
+Epoch 0140 | LR: 0.000044 | Train MSE: 0.16656 | Val MSE: 0.16881 (Best: 0.16874)
+Epoch 0150 | LR: 0.000022 | Train MSE: 0.16646 | Val MSE: 0.16876 (Best: 0.16872)
+Epoch 0160 | LR: 0.000011 | Train MSE: 0.16646 | Val MSE: 0.16875 (Best: 0.16872)
+Epoch 0170 | LR: 0.000011 | Train MSE: 0.16642 | Val MSE: 0.16871 (Best: 0.16871)
+Epoch 0180 | LR: 0.000005 | Train MSE: 0.16637 | Val MSE: 0.16872 (Best: 0.16871)
+Epoch 0190 | LR: 0.000003 | Train MSE: 0.16637 | Val MSE: 0.16872 (Best: 0.16871)
+Epoch 0200 | LR: 0.000001 | Train MSE: 0.16636 | Val MSE: 0.16872 (Best: 0.16871)
+Epoch 0210 | LR: 0.000001 | Train MSE: 0.16634 | Val MSE: 0.16872 (Best: 0.16871)
+Epoch 0220 | LR: 0.000000 | Train MSE: 0.16634 | Val MSE: 0.16872 (Best: 0.16871)
+Epoch 0230 | LR: 0.000000 | Train MSE: 0.16634 | Val MSE: 0.16872 (Best: 0.16871)
+Epoch 0240 | LR: 0.000000 | Train MSE: 0.16632 | Val MSE: 0.16872 (Best: 0.16871)
+Epoch 0250 | LR: 0.000000 | Train MSE: 0.16638 | Val MSE: 0.16872 (Best: 0.16871)
+Epoch 0260 | LR: 0.000000 | Train MSE: 0.16635 | Val MSE: 0.16872 (Best: 0.16871)
+Epoch 0270 | LR: 0.000000 | Train MSE: 0.16634 | Val MSE: 0.16872 (Best: 0.16871)
+Early stopping triggered at Epoch 270. Best Val MSE: 0.16871
+Run complete. Checkpoint saved as 'best_sage_gnn.pth'.
+training complete for  sage gnn
+Targeting isolated GPU. PyTorch device index: cuda
+Loading model, test graphs, and scalers...
+Running inferences...
+Inverting scaling and transformations...
+Passing combined results to vnz.visualize...
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/gnn/plots
+
+--- Standard Location Metrics ---
+GraphSAGE -> MAE: [2.28689395 2.31004192] | MSE: [12.85363474 13.14006571]
+
+--- Location Error Statistics (Euclidean Distance) ---
+GraphSAGE:
+  MSE:     25.99370045542759
+  Mean:    3.6067747992458306
+  Median:  2.389478177170642
+  Minimum: 0.0011271087501995428
+  Maximum: 23.04700076389956
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/gnn/plots
+
+--- Intensity Prediction Metrics ---
+GraphSAGE:
+  MSE: 3935611.535785151 µCi*µCi
+  MAE:   1546.509407354564 µCi
+  NRMSE: 0.26103126025984974
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+ Testing and Visualization Complete!

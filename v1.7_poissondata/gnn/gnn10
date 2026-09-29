@@ -1,0 +1,36 @@
+Locking all random seeds to 42...
+Targeting isolated GPU. PyTorch device index: cuda
+Loading graphs from storage...
+Configuring dynamic DataLoaders with batch size 1024...
+Executing Dynamic Training Loop...
+Epoch 0001 | LR: 0.002806 | Train MSE: 0.51215 | Val MSE: 0.34390 (Best: 0.34390)
+Epoch 0010 | LR: 0.002806 | Train MSE: 0.17924 | Val MSE: 0.17681 (Best: 0.17681)
+Epoch 0020 | LR: 0.002806 | Train MSE: 0.17552 | Val MSE: 0.17552 (Best: 0.17524)
+Epoch 0030 | LR: 0.002806 | Train MSE: 0.17383 | Val MSE: 0.17710 (Best: 0.17350)
+Epoch 0040 | LR: 0.002806 | Train MSE: 0.17332 | Val MSE: 0.17438 (Best: 0.17169)
+Epoch 0050 | LR: 0.001403 | Train MSE: 0.17074 | Val MSE: 0.17040 (Best: 0.17036)
+Epoch 0060 | LR: 0.000702 | Train MSE: 0.16921 | Val MSE: 0.17002 (Best: 0.17002)
+Epoch 0070 | LR: 0.000702 | Train MSE: 0.16863 | Val MSE: 0.17051 (Best: 0.16945)
+Epoch 0080 | LR: 0.000351 | Train MSE: 0.16771 | Val MSE: 0.16920 (Best: 0.16911)
+Epoch 0090 | LR: 0.000351 | Train MSE: 0.16750 | Val MSE: 0.16920 (Best: 0.16879)
+Epoch 0100 | LR: 0.000175 | Train MSE: 0.16675 | Val MSE: 0.16887 (Best: 0.16867)
+Epoch 0110 | LR: 0.000088 | Train MSE: 0.16671 | Val MSE: 0.16901 (Best: 0.16866)
+Epoch 0120 | LR: 0.000088 | Train MSE: 0.16621 | Val MSE: 0.16878 (Best: 0.16859)
+Epoch 0130 | LR: 0.000044 | Train MSE: 0.16592 | Val MSE: 0.16854 (Best: 0.16854)
+Epoch 0140 | LR: 0.000044 | Train MSE: 0.16588 | Val MSE: 0.16861 (Best: 0.16854)
+Epoch 0150 | LR: 0.000022 | Train MSE: 0.16577 | Val MSE: 0.16856 (Best: 0.16853)
+Epoch 0160 | LR: 0.000011 | Train MSE: 0.16570 | Val MSE: 0.16853 (Best: 0.16852)
+Epoch 0170 | LR: 0.000005 | Train MSE: 0.16567 | Val MSE: 0.16853 (Best: 0.16852)
+Epoch 0180 | LR: 0.000003 | Train MSE: 0.16566 | Val MSE: 0.16853 (Best: 0.16851)
+Epoch 0190 | LR: 0.000001 | Train MSE: 0.16562 | Val MSE: 0.16853 (Best: 0.16851)
+Epoch 0200 | LR: 0.000001 | Train MSE: 0.16565 | Val MSE: 0.16853 (Best: 0.16851)
+Epoch 0210 | LR: 0.000001 | Train MSE: 0.16561 | Val MSE: 0.16853 (Best: 0.16851)
+Epoch 0220 | LR: 0.000000 | Train MSE: 0.16560 | Val MSE: 0.16853 (Best: 0.16851)
+Epoch 0230 | LR: 0.000000 | Train MSE: 0.16561 | Val MSE: 0.16853 (Best: 0.16851)
+Epoch 0240 | LR: 0.000000 | Train MSE: 0.16562 | Val MSE: 0.16853 (Best: 0.16851)
+Epoch 0250 | LR: 0.000000 | Train MSE: 0.16563 | Val MSE: 0.16853 (Best: 0.16851)
+Epoch 0260 | LR: 0.000000 | Train MSE: 0.16562 | Val MSE: 0.16853 (Best: 0.16851)
+Epoch 0270 | LR: 0.000000 | Train MSE: 0.16563 | Val MSE: 0.16853 (Best: 0.16851)
+Early stopping triggered at Epoch 278. Best Val MSE: 0.16851
+Run complete. Checkpoint saved as 'best_sage_gnn.pth'.
+training complete for  sage gnn

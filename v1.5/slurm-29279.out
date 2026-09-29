@@ -1,0 +1,778 @@
+[I 2026-07-08 11:58:03,994] Using an existing study with name 'gnn_radiation_study' instead of creating a new one.
+[I 2026-07-08 12:17:24,214] Trial 68 finished with value: 0.017265077309807142 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0026439185730221643, 'dropout': 0.02829004401651968}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 12:26:36,713] Trial 69 pruned. 
+[I 2026-07-08 12:45:05,925] Trial 70 finished with value: 0.01632706303033564 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0015435768771460269, 'dropout': 0.013180055388680167}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 12:46:21,910] Trial 71 pruned. 
+[I 2026-07-08 13:04:45,690] Trial 72 finished with value: 0.016492757547895115 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.001614003561722038, 'dropout': 0.012379227079813704}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 13:23:28,133] Trial 73 finished with value: 0.017034327149722313 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.00150175916294538, 'dropout': 0.031650357997073296}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 13:40:34,761] Trial 74 finished with value: 0.016720802239576976 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.002131750249136871, 'dropout': 0.010229566019333029}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 13:58:06,986] Trial 75 finished with value: 0.017275334584712983 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0013623936000805039, 'dropout': 0.05289711352843736}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 14:16:01,078] Trial 76 finished with value: 0.016477042246196005 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0017609820191005461, 'dropout': 0.013536042882105177}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 14:35:26,637] Trial 77 finished with value: 0.01673023702171114 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.001713332655309696, 'dropout': 0.01611813154398712}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 14:52:54,259] Trial 78 finished with value: 0.017083515234125986 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0021328095460421536, 'dropout': 0.02730379427630165}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 15:10:25,433] Trial 79 finished with value: 0.017176475206679767 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0018801504198217816, 'dropout': 0.0402499027803303}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 15:27:54,944] Trial 80 finished with value: 0.01732252186304993 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0014961421568757656, 'dropout': 0.06237855574320704}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 15:29:03,378] Trial 81 pruned. 
+[I 2026-07-08 15:46:13,528] Trial 82 finished with value: 0.016744887822204166 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0016620367755541393, 'dropout': 0.013141059718523921}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 16:06:22,002] Trial 83 finished with value: 0.016464915479222932 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0024546219357814212, 'dropout': 0.01363456353312745}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 16:27:06,894] Trial 84 finished with value: 0.01639086839324898 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0023260146324534043, 'dropout': 0.011004715010299967}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 16:45:27,404] Trial 85 finished with value: 0.0172195986992783 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.002302210608066386, 'dropout': 0.02644092019341649}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 16:58:00,242] Trial 86 pruned. 
+[I 2026-07-08 17:15:47,766] Trial 87 finished with value: 0.01641128666963842 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.001399168300150664, 'dropout': 0.011721289271325012}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 17:16:40,739] Trial 88 pruned. 
+[I 2026-07-08 17:17:45,762] Trial 89 pruned. 
+[I 2026-07-08 17:33:56,375] Trial 90 pruned. 
+[I 2026-07-08 17:35:07,106] Trial 91 pruned. 
+[I 2026-07-08 17:53:03,775] Trial 92 finished with value: 0.016470849285854235 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0019972730538052852, 'dropout': 0.01056826175021624}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 18:10:56,493] Trial 93 finished with value: 0.016221693788634407 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.002019687944578432, 'dropout': 0.011268451902242045}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 18:28:11,658] Trial 94 finished with value: 0.01645429450770219 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0015703237367240544, 'dropout': 0.01144004282876556}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 18:45:35,935] Trial 95 finished with value: 0.016758307194047504 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0020014127327681523, 'dropout': 0.019949967296022324}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 19:03:13,643] Trial 96 finished with value: 0.016975679479042688 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0015373141846126883, 'dropout': 0.034020363796991936}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 19:19:07,772] Trial 97 finished with value: 0.01657552546262741 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0012244996546988012, 'dropout': 0.009777736524793183}. Best is trial 66 with value: 0.01601305772198571.
+[I 2026-07-08 19:31:01,603] Trial 98 pruned. 
+[I 2026-07-08 19:32:13,179] Trial 99 pruned. 
+Targeting GPU: cuda
+Loading graphs into A100 VRAM...
+
+==================================================
+?? INIT OPTUNA HYPERPARAMETER SEARCH ??
+==================================================
+Loaded existing study. 68 trials completed out of 100.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.37744016 0.3795111 ] | MSE: [0.45117936 0.46370798]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.9148873412238264
+  Mean:    0.595251862313109
+  Median:  0.3866116839405034
+  Minimum: 0.0016930674707715497
+  Maximum: 14.88690789517844
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 254938.46618121065 µCi*µCi
+  MAE:   255.39207870619913 µCi
+  NRMSE: 0.06643609416876087
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.35664    0.35860021] | MSE: [0.40958104 0.42842645]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8380074930179207
+  Mean:    0.5603054782855118
+  Median:  0.3663481013323773
+  Minimum: 0.0012591727328519914
+  Maximum: 14.998158197439333
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 237531.5104021529 µCi*µCi
+  MAE:   239.0653260173743 µCi
+  NRMSE: 0.06412790067877347
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.34852139 0.35067936] | MSE: [0.40893284 0.42800027]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8369331051390432
+  Mean:    0.5485779533953792
+  Median:  0.34954362224707985
+  Minimum: 0.003709487589087568
+  Maximum: 15.129927793412518
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 244964.5253401172 µCi*µCi
+  MAE:   239.05296369619487 µCi
+  NRMSE: 0.06512354088360134
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.36464672 0.37048602] | MSE: [0.42657903 0.45120128]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8777803104591613
+  Mean:    0.5767542666977082
+  Median:  0.37247411805563957
+  Minimum: 0.0029425563363585402
+  Maximum: 15.152394884643947
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 251950.1820948721 µCi*µCi
+  MAE:   244.00925323196074 µCi
+  NRMSE: 0.06604557811140058
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.36359239 0.35939901] | MSE: [0.42047771 0.43420089]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.854678604676082
+  Mean:    0.5675970322083961
+  Median:  0.3708302997510563
+  Minimum: 0.00279431564599295
+  Maximum: 14.799313770224618
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 245056.7486843942 µCi*µCi
+  MAE:   241.35311505723757 µCi
+  NRMSE: 0.06513579846571184
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.36703171 0.37011097] | MSE: [0.44004302 0.45670647]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.896749495274649
+  Mean:    0.5783132276719988
+  Median:  0.36639077401903014
+  Minimum: 0.0019186191221668158
+  Maximum: 15.002978032553855
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 250307.91741340983 µCi*µCi
+  MAE:   247.5844079681058 µCi
+  NRMSE: 0.06582997666560798
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.36095971 0.36355661] | MSE: [0.41960772 0.43282695]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8524346650377009
+  Mean:    0.5678523959874149
+  Median:  0.37039045521993874
+  Minimum: 0.0016972479211278474
+  Maximum: 15.216710992802046
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 238902.7416409628 µCi*µCi
+  MAE:   240.30455372385867 µCi
+  NRMSE: 0.06431273434159927
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.35636587 0.35844688] | MSE: [0.42024272 0.44067976]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8609224849364162
+  Mean:    0.5606471972923277
+  Median:  0.35642155088830674
+  Minimum: 0.0035980879289351252
+  Maximum: 15.085881569025979
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 248716.07013246932 µCi*µCi
+  MAE:   238.7713223525994 µCi
+  NRMSE: 0.06562031808024649
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.3680768  0.37019423] | MSE: [0.43259369 0.4580093 ]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8906029849405767
+  Mean:    0.5797722981170693
+  Median:  0.3721791949244846
+  Minimum: 0.0020064869639816922
+  Maximum: 14.863788102095098
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 251648.64218779444 µCi*µCi
+  MAE:   246.0581403360134 µCi
+  NRMSE: 0.06600604382790144
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.37504979 0.3790557 ] | MSE: [0.43922436 0.46164225]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.9008666082334003
+  Mean:    0.5911840963885201
+  Median:  0.38415544991614325
+  Minimum: 0.0019128104057307784
+  Maximum: 15.08155128279829
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 255463.27010741216 µCi*µCi
+  MAE:   251.09255205061552 µCi
+  NRMSE: 0.0665044400694498
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.37033921 0.37684518] | MSE: [0.44321755 0.45817554]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.9013930937398705
+  Mean:    0.5857509928219496
+  Median:  0.37930484288084326
+  Minimum: 0.004237567735173566
+  Maximum: 15.192316244256645
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 249237.5998270685 µCi*µCi
+  MAE:   246.60164243170047 µCi
+  NRMSE: 0.06568908127434943
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.35606844 0.35577724] | MSE: [0.41396286 0.43163532]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8455981791091571
+  Mean:    0.5576811409878958
+  Median:  0.3592747048135866
+  Minimum: 0.0022634356058427005
+  Maximum: 15.17786164873607
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 242983.12779643762 µCi*µCi
+  MAE:   239.20260613473874 µCi
+  NRMSE: 0.06485962999527456
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.36438651 0.37280421] | MSE: [0.41698485 0.44085306]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8578379117250657
+  Mean:    0.577406010407484
+  Median:  0.37573155590379265
+  Minimum: 0.002483082500963497
+  Maximum: 14.426224249692597
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 239743.9169245483 µCi*µCi
+  MAE:   242.51279528268063 µCi
+  NRMSE: 0.06442585725070887
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.35727107 0.35689831] | MSE: [0.41442895 0.43607821]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8505071643022052
+  Mean:    0.5609772234886479
+  Median:  0.36349650170240816
+  Minimum: 0.0029305642512760634
+  Maximum: 14.990549196319332
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 245293.79115237383 µCi*µCi
+  MAE:   245.38464262839338 µCi
+  NRMSE: 0.06516729365725073
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.36891575 0.3721358 ] | MSE: [0.44820811 0.45698481]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.9051929182355275
+  Mean:    0.5821051436490817
+  Median:  0.3717779697454775
+  Minimum: 0.0013082814847465542
+  Maximum: 15.106146587056756
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 251385.5682451891 µCi*µCi
+  MAE:   249.57195613176506 µCi
+  NRMSE: 0.06597153338782843
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.34530838 0.35021766] | MSE: [0.40134204 0.42034484]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.821686878555015
+  Mean:    0.5451856034809377
+  Median:  0.3479869225807781
+  Minimum: 0.003248088125273708
+  Maximum: 15.227716204461514
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 240305.01333718753 µCi*µCi
+  MAE:   238.4018229811372 µCi
+  NRMSE: 0.06450120429542944
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.35770963 0.35937679] | MSE: [0.42381988 0.43789454]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8617144147727942
+  Mean:    0.5629344102864536
+  Median:  0.35945047378659634
+  Minimum: 0.002609900231663219
+  Maximum: 15.126859659861331
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 247980.0674210741 µCi*µCi
+  MAE:   239.51312915727203 µCi
+  NRMSE: 0.06552315404297032
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.35216879 0.35526743] | MSE: [0.41509233 0.43791637]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8530086971920621
+  Mean:    0.5564632645637482
+  Median:  0.35651427457457685
+  Minimum: 0.0016289867599724543
+  Maximum: 15.038164912206792
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 239362.0324385065 µCi*µCi
+  MAE:   240.33019759860434 µCi
+  NRMSE: 0.0643745253106919
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.35600698 0.35749724] | MSE: [0.41280648 0.43352104]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.84632752460938
+  Mean:    0.5598144370038822
+  Median:  0.3600408176369222
+  Minimum: 0.005459952607734112
+  Maximum: 15.181340944047014
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 248239.38055048915 µCi*µCi
+  MAE:   243.1181255970442 µCi
+  NRMSE: 0.06555740392188066
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.36170404 0.36671342] | MSE: [0.4273557  0.44904032]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8763960200229384
+  Mean:    0.5728995962249717
+  Median:  0.3668301121620391
+  Minimum: 0.0022640557292812487
+  Maximum: 15.334531047447621
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 250975.57292216748 µCi*µCi
+  MAE:   247.59766721568923 µCi
+  NRMSE: 0.06591771355685695
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.37164175 0.36717207] | MSE: [0.43349241 0.44006158]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.873553993850692
+  Mean:    0.5794463475931934
+  Median:  0.3742654117806373
+  Minimum: 0.006338210659159422
+  Maximum: 14.879016883678505
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 252865.2923067498 µCi*µCi
+  MAE:   248.6820823764691 µCi
+  NRMSE: 0.06616541172630813
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [0.35302128 0.35933408] | MSE: [0.40715811 0.43250514]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     0.8396632520967612
+  Mean:    0.5588325179691406
+  Median:  0.3603078691339803
+  Minimum: 0.0015232040857716303
+  Maximum: 15.065633878319685
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 239889.98710516622 µCi*µCi
+  MAE:   239.33332348967537 µCi
+  NRMSE: 0.06444548082183994
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+==================================================
+?? TUNING COMPLETE ??
+==================================================
+Best Trial:
+  Value (Validation MSE): 0.01601305772198571
+  Params: 
+    model_type: SAGE
+    num_layers: 5
+    hidden_dim: 512
+    lr: 0.0028062749167200355
+    dropout: 0.00015923260230465551

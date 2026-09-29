@@ -1,0 +1,20 @@
+[I 2026-07-09 12:09:42,613] Using an existing study with name 'gnn_radiation_study' instead of creating a new one.
+Targeting GPU: cuda
+Loading graphs into A100 VRAM...
+
+==================================================
+?? INIT OPTUNA HYPERPARAMETER SEARCH ??
+==================================================
+Loaded existing study. 100 trials completed out of 100.
+
+==================================================
+?? TUNING COMPLETE ??
+==================================================
+Best Trial:
+  Value (Validation MSE): 0.01601305772198571
+  Params: 
+    model_type: SAGE
+    num_layers: 5
+    hidden_dim: 512
+    lr: 0.0028062749167200355
+    dropout: 0.00015923260230465551

@@ -1,0 +1,60 @@
+Targeting isolated GPU. PyTorch device index: cuda
+Loading model, test graphs, and scalers...
+Running inferences...
+Inverting scaling and transformations...
+Passing combined results to vnz.visualize...
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/gnn/plots
+
+--- Standard Location Metrics ---
+GraphSAGE -> MAE: [0.34616449 0.3487136 ] | MSE: [0.38867241 0.40174709]
+
+--- Location Error Statistics (Euclidean Distance) ---
+GraphSAGE:
+  MSE:     0.790419503085437
+  Mean:    0.5451612470462153
+  Median:  0.36731480460255955
+  Minimum: 0.0027140224177053325
+  Maximum: 14.770486518187433
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/gnn/plots
+
+--- Intensity Prediction Metrics ---
+GraphSAGE:
+  MSE: 237863.63158121565 µCi*µCi
+  MAE:   231.70089065577156 µCi
+  NRMSE: 0.06417271745749725
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[[ 0.0544551   0.18810344]
+ [ 9.187969   13.551706  ]
+ [ 3.37592    14.860926  ]
+ ...
+ [ 0.52084476 17.29074   ]
+ [ 1.9896643   0.64558196]
+ [10.26906     0.8424747 ]]
+            source_x      source_y
+17207   8.076126e-07  6.889840e-04
+229948  9.341393e+00  1.420181e+01
+154686  3.256919e+00  1.526537e+01
+152369  1.482060e-07  7.415258e-01
+254245  9.842676e-11  2.244133e-15
+...              ...           ...
+78431   7.631198e-01  1.133474e+00
+12391   1.275930e+01  3.322379e+00
+139998  4.782514e-05  1.775405e+01
+34770   1.522438e+00  1.401982e-01
+237379  1.083570e+01  7.655105e-01
+
+[15000 rows x 2 columns]
+ Testing and Visualization Complete!

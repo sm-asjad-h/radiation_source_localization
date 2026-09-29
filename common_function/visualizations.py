@@ -229,7 +229,7 @@ def visualize_int_results(models_preds, y_test_int, y_test_loc, X_test_unscaled,
         sns.histplot(sq_err, kde=True, ax=axes[1, 1], color='firebrick', bins=50)
         axes[1, 1].set_title('Squared Error Frequency (MSE View)')
         axes[1, 1].set_xlabel('Squared Error [µCi²]')
-        sns.histplot(per_err, kde=True, ax=axes[2, 0], color='firebrick', binwidth=5)
+        sns.histplot(per_err, kde=True, ax=axes[2, 0], color='firebrick', bins=50)
         axes[2, 0].set_title('percentage error Frequency (MSE View)')
         axes[2, 0].set_xlabel('percentage Error [%]')
         axes[2, 0].set_ylabel('Frequency')

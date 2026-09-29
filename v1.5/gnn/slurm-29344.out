@@ -1,0 +1,147 @@
+Locking all random seeds to 42...
+Loading graphs and scalers...
+Dataset locked in VRAM.
+Executing PIML Training...
+Epoch 001 | Total Val Loss: 2.3139 | Loc MSE: 0.4813 | Int MSE: 0.6942 | Phys MSE: 1.14
+Epoch 010 | Total Val Loss: 0.2668 | Loc MSE: 0.1911 | Int MSE: 0.2056 | Phys MSE: 0.55
+Epoch 020 | Total Val Loss: -0.9285 | Loc MSE: 0.1047 | Int MSE: 0.1745 | Phys MSE: 0.38
+Epoch 030 | Total Val Loss: -1.8999 | Loc MSE: 0.0816 | Int MSE: 0.1217 | Phys MSE: 0.31
+Epoch 040 | Total Val Loss: -2.2083 | Loc MSE: 0.0844 | Int MSE: 0.1251 | Phys MSE: 0.37
+Epoch 050 | Total Val Loss: -3.3065 | Loc MSE: 0.0523 | Int MSE: 0.1206 | Phys MSE: 0.19
+Epoch 060 | Total Val Loss: -3.7296 | Loc MSE: 0.0484 | Int MSE: 0.1011 | Phys MSE: 0.19
+Epoch 070 | Total Val Loss: -3.9776 | Loc MSE: 0.0464 | Int MSE: 0.0909 | Phys MSE: 0.20
+Epoch 080 | Total Val Loss: -4.1780 | Loc MSE: 0.0411 | Int MSE: 0.0937 | Phys MSE: 0.19
+Epoch 090 | Total Val Loss: -4.6798 | Loc MSE: 0.0346 | Int MSE: 0.0859 | Phys MSE: 0.14
+Epoch 100 | Total Val Loss: -4.3077 | Loc MSE: 0.0409 | Int MSE: 0.0849 | Phys MSE: 0.19
+Epoch 110 | Total Val Loss: -4.7072 | Loc MSE: 0.0323 | Int MSE: 0.0784 | Phys MSE: 0.17
+Epoch 120 | Total Val Loss: -4.5748 | Loc MSE: 0.0323 | Int MSE: 0.0786 | Phys MSE: 0.20
+Epoch 130 | Total Val Loss: -4.1290 | Loc MSE: 0.0297 | Int MSE: 0.1179 | Phys MSE: 0.21
+Epoch 140 | Total Val Loss: -5.1349 | Loc MSE: 0.0291 | Int MSE: 0.0735 | Phys MSE: 0.13
+Epoch 150 | Total Val Loss: -5.1534 | Loc MSE: 0.0278 | Int MSE: 0.0696 | Phys MSE: 0.15
+Epoch 160 | Total Val Loss: -4.6782 | Loc MSE: 0.0349 | Int MSE: 0.0739 | Phys MSE: 0.17
+Epoch 170 | Total Val Loss: -5.5211 | Loc MSE: 0.0236 | Int MSE: 0.0766 | Phys MSE: 0.11
+Epoch 180 | Total Val Loss: -4.9426 | Loc MSE: 0.0280 | Int MSE: 0.0984 | Phys MSE: 0.12
+Epoch 190 | Total Val Loss: -5.6058 | Loc MSE: 0.0263 | Int MSE: 0.0629 | Phys MSE: 0.11
+Epoch 200 | Total Val Loss: -5.4858 | Loc MSE: 0.0237 | Int MSE: 0.0779 | Phys MSE: 0.11
+Epoch 210 | Total Val Loss: -5.5872 | Loc MSE: 0.0227 | Int MSE: 0.0738 | Phys MSE: 0.11
+Epoch 220 | Total Val Loss: -5.1765 | Loc MSE: 0.0261 | Int MSE: 0.0738 | Phys MSE: 0.14
+Epoch 230 | Total Val Loss: -5.7817 | Loc MSE: 0.0206 | Int MSE: 0.0696 | Phys MSE: 0.11
+Epoch 240 | Total Val Loss: -6.0895 | Loc MSE: 0.0192 | Int MSE: 0.0580 | Phys MSE: 0.10
+Epoch 250 | Total Val Loss: -5.6971 | Loc MSE: 0.0239 | Int MSE: 0.0672 | Phys MSE: 0.10
+Epoch 260 | Total Val Loss: -5.6896 | Loc MSE: 0.0198 | Int MSE: 0.0636 | Phys MSE: 0.13
+Epoch 270 | Total Val Loss: -5.9716 | Loc MSE: 0.0214 | Int MSE: 0.0576 | Phys MSE: 0.10
+Epoch 280 | Total Val Loss: -5.9533 | Loc MSE: 0.0213 | Int MSE: 0.0644 | Phys MSE: 0.09
+Epoch 290 | Total Val Loss: -5.8535 | Loc MSE: 0.0222 | Int MSE: 0.0624 | Phys MSE: 0.10
+Epoch 300 | Total Val Loss: -6.3486 | Loc MSE: 0.0173 | Int MSE: 0.0567 | Phys MSE: 0.08
+Epoch 310 | Total Val Loss: -6.7855 | Loc MSE: 0.0154 | Int MSE: 0.0545 | Phys MSE: 0.06
+Epoch 320 | Total Val Loss: -6.4102 | Loc MSE: 0.0161 | Int MSE: 0.0565 | Phys MSE: 0.09
+Epoch 330 | Total Val Loss: -6.9704 | Loc MSE: 0.0142 | Int MSE: 0.0507 | Phys MSE: 0.06
+Epoch 340 | Total Val Loss: -7.1144 | Loc MSE: 0.0142 | Int MSE: 0.0498 | Phys MSE: 0.06
+Epoch 350 | Total Val Loss: -6.9651 | Loc MSE: 0.0143 | Int MSE: 0.0504 | Phys MSE: 0.06
+Epoch 360 | Total Val Loss: -7.1857 | Loc MSE: 0.0133 | Int MSE: 0.0549 | Phys MSE: 0.05
+Epoch 370 | Total Val Loss: -7.5107 | Loc MSE: 0.0120 | Int MSE: 0.0536 | Phys MSE: 0.04
+Epoch 380 | Total Val Loss: -7.3828 | Loc MSE: 0.0129 | Int MSE: 0.0553 | Phys MSE: 0.04
+Epoch 390 | Total Val Loss: -7.3989 | Loc MSE: 0.0127 | Int MSE: 0.0473 | Phys MSE: 0.05
+Epoch 400 | Total Val Loss: -7.4909 | Loc MSE: 0.0117 | Int MSE: 0.0495 | Phys MSE: 0.05
+Epoch 410 | Total Val Loss: -7.2854 | Loc MSE: 0.0139 | Int MSE: 0.0513 | Phys MSE: 0.05
+Epoch 420 | Total Val Loss: -7.2614 | Loc MSE: 0.0140 | Int MSE: 0.0638 | Phys MSE: 0.04
+Epoch 430 | Total Val Loss: -7.8097 | Loc MSE: 0.0119 | Int MSE: 0.0459 | Phys MSE: 0.04
+Epoch 440 | Total Val Loss: -7.3476 | Loc MSE: 0.0134 | Int MSE: 0.0470 | Phys MSE: 0.05
+Epoch 450 | Total Val Loss: -6.9537 | Loc MSE: 0.0147 | Int MSE: 0.0530 | Phys MSE: 0.05
+Epoch 460 | Total Val Loss: -8.0058 | Loc MSE: 0.0116 | Int MSE: 0.0450 | Phys MSE: 0.03
+Epoch 470 | Total Val Loss: -8.2318 | Loc MSE: 0.0108 | Int MSE: 0.0431 | Phys MSE: 0.03
+Epoch 480 | Total Val Loss: -8.3307 | Loc MSE: 0.0102 | Int MSE: 0.0447 | Phys MSE: 0.03
+Epoch 490 | Total Val Loss: -8.2627 | Loc MSE: 0.0097 | Int MSE: 0.0520 | Phys MSE: 0.02
+Epoch 500 | Total Val Loss: -8.4913 | Loc MSE: 0.0096 | Int MSE: 0.0447 | Phys MSE: 0.02
+Epoch 510 | Total Val Loss: -8.3418 | Loc MSE: 0.0093 | Int MSE: 0.0560 | Phys MSE: 0.02
+Epoch 520 | Total Val Loss: -8.4834 | Loc MSE: 0.0096 | Int MSE: 0.0465 | Phys MSE: 0.02
+Epoch 530 | Total Val Loss: -8.5900 | Loc MSE: 0.0097 | Int MSE: 0.0451 | Phys MSE: 0.02
+Epoch 540 | Total Val Loss: -8.5080 | Loc MSE: 0.0093 | Int MSE: 0.0513 | Phys MSE: 0.02
+Epoch 550 | Total Val Loss: -8.5315 | Loc MSE: 0.0091 | Int MSE: 0.0455 | Phys MSE: 0.02
+Epoch 560 | Total Val Loss: -8.4426 | Loc MSE: 0.0096 | Int MSE: 0.0434 | Phys MSE: 0.02
+Epoch 570 | Total Val Loss: -8.6212 | Loc MSE: 0.0092 | Int MSE: 0.0470 | Phys MSE: 0.02
+Epoch 580 | Total Val Loss: -8.4820 | Loc MSE: 0.0096 | Int MSE: 0.0510 | Phys MSE: 0.02
+Epoch 590 | Total Val Loss: -8.5567 | Loc MSE: 0.0094 | Int MSE: 0.0521 | Phys MSE: 0.02
+Epoch 600 | Total Val Loss: -8.4966 | Loc MSE: 0.0092 | Int MSE: 0.0485 | Phys MSE: 0.02
+Epoch 610 | Total Val Loss: -8.7062 | Loc MSE: 0.0091 | Int MSE: 0.0545 | Phys MSE: 0.02
+Epoch 620 | Total Val Loss: -8.6490 | Loc MSE: 0.0097 | Int MSE: 0.0477 | Phys MSE: 0.02
+Epoch 630 | Total Val Loss: -8.7091 | Loc MSE: 0.0093 | Int MSE: 0.0499 | Phys MSE: 0.02
+Epoch 640 | Total Val Loss: -8.7649 | Loc MSE: 0.0089 | Int MSE: 0.0540 | Phys MSE: 0.01
+Epoch 650 | Total Val Loss: -8.7067 | Loc MSE: 0.0091 | Int MSE: 0.0567 | Phys MSE: 0.01
+Epoch 660 | Total Val Loss: -8.7315 | Loc MSE: 0.0088 | Int MSE: 0.0556 | Phys MSE: 0.01
+Epoch 670 | Total Val Loss: -8.6440 | Loc MSE: 0.0088 | Int MSE: 0.0596 | Phys MSE: 0.01
+Epoch 680 | Total Val Loss: -8.6484 | Loc MSE: 0.0087 | Int MSE: 0.0589 | Phys MSE: 0.01
+Epoch 690 | Total Val Loss: -8.7632 | Loc MSE: 0.0086 | Int MSE: 0.0586 | Phys MSE: 0.01
+Epoch 700 | Total Val Loss: -8.7223 | Loc MSE: 0.0087 | Int MSE: 0.0585 | Phys MSE: 0.01
+Epoch 710 | Total Val Loss: -8.8067 | Loc MSE: 0.0085 | Int MSE: 0.0578 | Phys MSE: 0.01
+Epoch 720 | Total Val Loss: -8.8320 | Loc MSE: 0.0085 | Int MSE: 0.0594 | Phys MSE: 0.01
+Epoch 730 | Total Val Loss: -8.8218 | Loc MSE: 0.0083 | Int MSE: 0.0593 | Phys MSE: 0.01
+Epoch 740 | Total Val Loss: -8.8512 | Loc MSE: 0.0085 | Int MSE: 0.0583 | Phys MSE: 0.01
+Epoch 750 | Total Val Loss: -8.8229 | Loc MSE: 0.0082 | Int MSE: 0.0615 | Phys MSE: 0.01
+Epoch 760 | Total Val Loss: -8.8730 | Loc MSE: 0.0083 | Int MSE: 0.0615 | Phys MSE: 0.01
+Epoch 770 | Total Val Loss: -8.7720 | Loc MSE: 0.0082 | Int MSE: 0.0633 | Phys MSE: 0.01
+Epoch 780 | Total Val Loss: -8.7909 | Loc MSE: 0.0082 | Int MSE: 0.0643 | Phys MSE: 0.01
+Epoch 790 | Total Val Loss: -8.8659 | Loc MSE: 0.0081 | Int MSE: 0.0640 | Phys MSE: 0.01
+Epoch 800 | Total Val Loss: -8.8814 | Loc MSE: 0.0082 | Int MSE: 0.0613 | Phys MSE: 0.01
+Epoch 810 | Total Val Loss: -8.8957 | Loc MSE: 0.0081 | Int MSE: 0.0633 | Phys MSE: 0.01
+Epoch 820 | Total Val Loss: -8.8955 | Loc MSE: 0.0081 | Int MSE: 0.0632 | Phys MSE: 0.01
+Epoch 830 | Total Val Loss: -8.9214 | Loc MSE: 0.0080 | Int MSE: 0.0649 | Phys MSE: 0.01
+Epoch 840 | Total Val Loss: -8.9438 | Loc MSE: 0.0081 | Int MSE: 0.0641 | Phys MSE: 0.01
+Epoch 850 | Total Val Loss: -8.9686 | Loc MSE: 0.0079 | Int MSE: 0.0646 | Phys MSE: 0.01
+Epoch 860 | Total Val Loss: -8.9327 | Loc MSE: 0.0079 | Int MSE: 0.0661 | Phys MSE: 0.01
+Epoch 870 | Total Val Loss: -8.9587 | Loc MSE: 0.0080 | Int MSE: 0.0642 | Phys MSE: 0.01
+Epoch 880 | Total Val Loss: -8.9648 | Loc MSE: 0.0079 | Int MSE: 0.0666 | Phys MSE: 0.01
+Epoch 890 | Total Val Loss: -8.9692 | Loc MSE: 0.0079 | Int MSE: 0.0641 | Phys MSE: 0.01
+Epoch 900 | Total Val Loss: -8.9685 | Loc MSE: 0.0078 | Int MSE: 0.0667 | Phys MSE: 0.01
+Epoch 910 | Total Val Loss: -8.9542 | Loc MSE: 0.0078 | Int MSE: 0.0667 | Phys MSE: 0.01
+Epoch 920 | Total Val Loss: -8.9719 | Loc MSE: 0.0078 | Int MSE: 0.0657 | Phys MSE: 0.01
+Epoch 930 | Total Val Loss: -8.9742 | Loc MSE: 0.0077 | Int MSE: 0.0669 | Phys MSE: 0.01
+Epoch 940 | Total Val Loss: -8.9736 | Loc MSE: 0.0078 | Int MSE: 0.0665 | Phys MSE: 0.01
+Epoch 950 | Total Val Loss: -8.9905 | Loc MSE: 0.0078 | Int MSE: 0.0669 | Phys MSE: 0.01
+Epoch 960 | Total Val Loss: -8.9849 | Loc MSE: 0.0077 | Int MSE: 0.0667 | Phys MSE: 0.01
+Epoch 970 | Total Val Loss: -8.9726 | Loc MSE: 0.0077 | Int MSE: 0.0672 | Phys MSE: 0.01
+Epoch 980 | Total Val Loss: -9.0074 | Loc MSE: 0.0077 | Int MSE: 0.0682 | Phys MSE: 0.01
+Epoch 990 | Total Val Loss: -9.0009 | Loc MSE: 0.0077 | Int MSE: 0.0672 | Phys MSE: 0.01
+Epoch 1000 | Total Val Loss: -9.0017 | Loc MSE: 0.0076 | Int MSE: 0.0683 | Phys MSE: 0.01
+Generating PIML training curves...
+PIML Training Complete. Checkpoint saved as 'best_piml_sage.pth'. Curves saved as 'piml_training_dashboard.png'.
+training complete for physics based sage gnn
+Targeting isolated GPU. PyTorch device index: cuda
+Loading model, test graphs, and scalers...
+Running inferences...
+Inverting scaling and transformations...
+Passing combined results to vnz.visualize...
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/gnn/plots
+
+--- Standard Location Metrics ---
+GraphSAGE -> MAE: [0.40339115 0.40338446] | MSE: [0.43023942 0.44538674]
+
+--- Location Error Statistics (Euclidean Distance) ---
+GraphSAGE:
+  MSE:     0.8756261569092559
+  Mean:    0.6274526343762307
+  Median:  0.46542857369127644
+  Minimum: 0.006448374399435586
+  Maximum: 14.627918416724691
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.5/gnn/plots
+
+--- Intensity Prediction Metrics ---
+GraphSAGE:
+  MSE: 639157.5748081439 µCi*µCi
+  MAE:   588.8636355789109 µCi
+  NRMSE: 0.10519385669463108
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+ Testing and Visualization Complete!

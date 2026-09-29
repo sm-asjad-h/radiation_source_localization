@@ -1,0 +1,136 @@
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.5.0
+Python Version:     3.12.3
+Operating System:   Linux
+Platform Machine:   x86_64
+Platform Version:   #1 SMP Thu Mar 10 20:59:28 UTC 2022
+CPU Count:          96
+Pytorch Version:    2.9.1+cu128
+CUDA Version:       12.8
+GPU Memory:         GPU 0: 79.25/79.25 GB
+Total GPU Memory:   Free: 79.25 GB, Allocated: 0.00 GB, Total: 79.25 GB
+GPU Count:          1
+Memory Avail:       987.61 GB / 1007.70 GB (98.0%)
+Disk Space Avail:   356.50 GB / 62925.68 GB (0.6%)
+===================================================
+Presets specified: ['best_quality']
+Using hyperparameters preset: hyperparameters='zeroshot'
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=8, num_bag_sets=1
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Running DyStack for up to 1350s of the 5400s of remaining time (25%).
+Running DyStack sub-fit ...
+Beginning AutoGluon training ... Time limit = 1350s
+AutoGluon will save models to "/home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/modelauml/AG_Models/source_x/ds_sub_fit/sub_fit_ho"
+Train Data Rows:    213333
+Train Data Columns: 28
+Label Column:       source_x
+Problem Type:       regression
+Preprocessing data ...
+Using Feature Generators to preprocess the data ...
+Fitting AutoMLPipelineFeatureGenerator...
+	Available Memory:                    1011213.27 MB
+	Train Data (Original)  Memory Usage: 45.57 MB (0.0% of available memory)
+	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+	Stage 1 Generators:
+		Fitting AsTypeFeatureGenerator...
+	Stage 2 Generators:
+		Fitting FillNaFeatureGenerator...
+	Stage 3 Generators:
+		Fitting IdentityFeatureGenerator...
+	Stage 4 Generators:
+		Fitting DropUniqueFeatureGenerator...
+	Stage 5 Generators:
+		Fitting DropDuplicatesFeatureGenerator...
+	Useless Original Features (Count: 2): ['rel_det1_x', 'rel_det1_y']
+		These features carry no predictive signal and should be manually investigated.
+		This is typically a feature which has the same value for all rows.
+		These features do not need to be present at inference time.
+	Unused Original Features (Count: 2): ['anchor_x', 'anchor_y']
+		These features were not used to generate any of the output features. Add a feature generator compatible with these features to utilize them.
+		Features can also be unused if they carry very little information, such as being categorical but having almost entirely unique values or being duplicates of other features.
+		These features do not need to be present at inference time.
+		('float', []) : 2 | ['anchor_x', 'anchor_y']
+	Types of features in original data (raw dtype, special dtypes):
+		('float', []) : 24 | ['det1_x', 'det1_y', 'det2_x', 'det2_y', 'det3_x', ...]
+	Types of features in processed data (raw dtype, special dtypes):
+		('float', []) : 24 | ['det1_x', 'det1_y', 'det2_x', 'det2_y', 'det3_x', ...]
+	0.4s = Fit runtime
+	24 features in original data used to generate 24 features in processed data.
+	Train Data (Processed) Memory Usage: 39.06 MB (0.0% of available memory)
+Data preprocessing and feature engineering runtime = 0.49s ...
+AutoGluon will gauge predictive performance using evaluation metric: 'root_mean_squared_error'
+	This metric's sign has been flipped to adhere to being higher_is_better. The metric score can be multiplied by -1 to get the metric value.
+	To change this, specify the eval_metric parameter of Predictor()
+Large model count detected (110 configs) ... Only displaying the first 3 models of each family. To see all, set `verbosity=3`.
+User-specified model hyperparameters to be fit:
+{
+	'NN_TORCH': [{}, {'activation': 'elu', 'dropout_prob': 0.10077639529843717, 'hidden_size': 108, 'learning_rate': 0.002735937344002146, 'num_layers': 4, 'use_batchnorm': True, 'weight_decay': 1.356433327634438e-12, 'ag_args': {'name_suffix': '_r79', 'priority': -2}}, {'activation': 'elu', 'dropout_prob': 0.11897478034205347, 'hidden_size': 213, 'learning_rate': 0.0010474382260641949, 'num_layers': 4, 'use_batchnorm': False, 'weight_decay': 5.594471067786272e-10, 'ag_args': {'name_suffix': '_r22', 'priority': -7}}],
+	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, {'learning_rate': 0.03, 'num_leaves': 128, 'feature_fraction': 0.9, 'min_data_in_leaf': 3, 'ag_args': {'name_suffix': 'Large', 'priority': 0, 'hyperparameter_tune_kwargs': None}}],
+	'CAT': [{}, {'depth': 6, 'grow_policy': 'SymmetricTree', 'l2_leaf_reg': 2.1542798306067823, 'learning_rate': 0.06864209415792857, 'max_ctr_complexity': 4, 'one_hot_max_size': 10, 'ag_args': {'name_suffix': '_r177', 'priority': -1}}, {'depth': 8, 'grow_policy': 'Depthwise', 'l2_leaf_reg': 2.7997999596449104, 'learning_rate': 0.031375015734637225, 'max_ctr_complexity': 2, 'one_hot_max_size': 3, 'ag_args': {'name_suffix': '_r9', 'priority': -5}}],
+	'XGB': [{}, {'colsample_bytree': 0.6917311125174739, 'enable_categorical': False, 'learning_rate': 0.018063876087523967, 'max_depth': 10, 'min_child_weight': 0.6028633586934382, 'ag_args': {'name_suffix': '_r33', 'priority': -8}}, {'colsample_bytree': 0.6628423832084077, 'enable_categorical': False, 'learning_rate': 0.08775715546881824, 'max_depth': 5, 'min_child_weight': 0.6294123374222513, 'ag_args': {'name_suffix': '_r89', 'priority': -16}}],
+	'FASTAI': [{}, {'bs': 256, 'emb_drop': 0.5411770367537934, 'epochs': 43, 'layers': [800, 400], 'lr': 0.01519848858318159, 'ps': 0.23782946566604385, 'ag_args': {'name_suffix': '_r191', 'priority': -4}}, {'bs': 2048, 'emb_drop': 0.05070411322605811, 'epochs': 29, 'layers': [200, 100], 'lr': 0.08974235041576624, 'ps': 0.10393466140748028, 'ag_args': {'name_suffix': '_r102', 'priority': -11}}],
+	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+}
+AutoGluon will fit 2 stack levels (L1 to L2) ...
+Fitting 106 L1 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 899.45s of the 1349.50s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (1.0 workers, per: cpus=1, gpus=1, memory=0.03%)
+/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/ray/_private/worker.py:2062: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+	-3.6651	 = Validation score   (-root_mean_squared_error)
+	687.63s	 = Training   runtime
+	56.36s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 73.91s of the 523.96s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (1.0 workers, per: cpus=1, gpus=1, memory=0.03%)
+	-3.7026	 = Validation score   (-root_mean_squared_error)
+	76.39s	 = Training   runtime
+	4.0s	 = Validation runtime
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 360.00s of the 444.60s of remaining time.
+	Fitting 1 model on all data | Fitting with cpus=96, gpus=1, mem=0.0/978.4 GB
+	Ensemble Weights: {'LightGBMXT_BAG_L1': 0.652, 'LightGBM_BAG_L1': 0.348}
+	-3.6506	 = Validation score   (-root_mean_squared_error)
+	0.03s	 = Training   runtime
+	0.0s	 = Validation runtime
+Fitting 106 L2 models, fit_strategy="sequential" ...
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 444.31s of the 444.28s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (1.0 workers, per: cpus=1, gpus=1, memory=0.03%)
+	-3.6275	 = Validation score   (-root_mean_squared_error)
+	98.21s	 = Training   runtime
+	5.47s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 343.61s of the 343.59s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (1.0 workers, per: cpus=1, gpus=1, memory=0.03%)
+	-3.6282	 = Validation score   (-root_mean_squared_error)
+	41.14s	 = Training   runtime
+	0.91s	 = Validation runtime
+Fitting model: RandomForestMSE_BAG_L2 ... Training model for up to 300.44s of the 300.42s of remaining time.
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=96, gpus=0, mem=1.0/979.4 GB
+	-3.6864	 = Validation score   (-root_mean_squared_error)
+	39.36s	 = Training   runtime
+	8.42s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 251.68s of the 251.66s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (1.0 workers, per: cpus=1, gpus=1, memory=0.07%)
+	-3.7104	 = Validation score   (-root_mean_squared_error)
+	51.25s	 = Training   runtime
+	0.04s	 = Validation runtime
+Fitting model: ExtraTreesMSE_BAG_L2 ... Training model for up to 198.61s of the 198.59s of remaining time.
+	Fitting 1 model on all data (use_child_oof=True) | Fitting with cpus=96, gpus=0, mem=1.0/977.7 GB
+	-3.661	 = Validation score   (-root_mean_squared_error)
+	5.21s	 = Training   runtime
+	6.78s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 185.59s of the 185.57s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy (1.0 workers, per: cpus=1, gpus=1, memory=0.05%)
+	-3.6358	 = Validation score   (-root_mean_squared_error)
+	217.68s	 = Training   runtime
+	1.66s	 = Validation runtime
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 360.00s of the -34.35s of remaining time.
+	Fitting 1 model on all data | Fitting with cpus=96, gpus=1, mem=0.0/974.7 GB
+	Ensemble Weights: {'LightGBMXT_BAG_L2': 0.5, 'LightGBM_BAG_L2': 0.357, 'ExtraTreesMSE_BAG_L2': 0.071, 'NeuralNetFastAI_BAG_L2': 0.071}
+	-3.6245	 = Validation score   (-root_mean_squared_error)
+	0.09s	 = Training   runtime
+	0.0s	 = Validation runtime
+AutoGluon training complete, total runtime = 1384.98s ... Best model: WeightedEnsemble_L3 | Estimated inference throughput: 385.1 rows/s (26667 batch size)
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("/home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/modelauml/AG_Models/source_x/ds_sub_fit/sub_fit_ho")

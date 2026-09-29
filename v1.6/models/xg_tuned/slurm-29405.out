@@ -1,0 +1,99 @@
+/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/xgboost/core.py:774: UserWarning: [11:38:31] WARNING: /workspace/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
+
+TRAINING XGBRegressor
+ Training XGBRegressor Location
+Completed in 8.11 seconds.
+ Training XGBRegressor Intensity
+Completed in 4.07 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.6/models/xg_tuned/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [0.69678002 0.70644177] | MSE: [1.20851391 1.24998997]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     2.4585038856447463
+  Mean:    1.1023413052050672
+  Median:  0.7852168783099982
+  Minimum: 0.001954779830331128
+  Maximum: 16.079148686752415
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.6/models/xg_tuned/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 509118.7485390232 µCi*µCi
+  MAE:   426.5966614016824 µCi
+  NRMSE: 0.09388494429654207
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+{'Current_Model':          source_x   source_y
+4941    17.643440   0.498807
+51775   15.993025  16.794613
+115253  17.187109   1.461094
+299321  -1.085902  -0.960790
+173570   2.585208   7.679381
+...           ...        ...
+75094   16.606464  17.846025
+171847   9.851353   2.023645
+138313  -1.154585  -0.992393
+271268  18.058826   0.414430
+72612   16.523809  16.478630
+
+[60000 rows x 2 columns]}
+         source_x      source_y
+4941    17.999999  1.483464e-01
+51775   16.360334  1.573612e+01
+115253  15.773671  2.690428e+00
+299321  -1.000000 -1.000000e+00
+173570   2.916234  5.774770e+00
+...           ...           ...
+75094   15.715767  1.794404e+01
+171847  10.466684  2.861190e+00
+138313  -1.000000 -1.000000e+00
+271268  18.000000  2.052302e-08
+72612   15.000849  1.734938e+01
+
+[60000 rows x 2 columns]
+{'Current_Model': 4941      2.006553e+03
+51775     3.339167e+03
+115253    6.269663e+03
+299321    1.008753e-06
+173570    8.452687e+02
+              ...     
+75094     2.611604e+03
+171847    7.248735e+02
+138313    9.975595e-07
+271268    2.875646e+03
+72612     8.404010e+02
+Name: I_0, Length: 60000, dtype: float32}
+4941      2030.584110
+51775     2913.645204
+115253    5968.531594
+299321       0.000001
+173570    1009.853128
+             ...     
+75094     2650.974533
+171847     712.194336
+138313       0.000001
+271268    3157.333191
+72612      895.800888
+Name: I_0, Length: 60000, dtype: float64

@@ -1,0 +1,39 @@
+
+TRAINING SVR
+ Training SVR Location
+Completed in 1063.87 seconds.
+ Training SVR Intensity
+Completed in 755.46 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.6_poissondata/models/svr/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [1.46761616 1.47020037] | MSE: [5.57493498 5.55450049]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     11.129435472188119
+  Mean:    2.3863940502219863
+  Median:  1.6291794178795485
+  Minimum: 0.005553878186715592
+  Maximum: 18.57499024377502
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.6_poissondata/models/svr/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 1369690.705757176 µCi*µCi
+  MAE:   882.0013186226115 µCi
+  NRMSE: 0.15399182363967753
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+

@@ -1,0 +1,187 @@
+Locking all random seeds to 42...
+Targeting isolated GPU. PyTorch device index: cuda
+Loading graphs from storage...
+Transferring entire dataset directly into A100 VRAM...
+Success! 469 train chunks and 88 val chunks are locked in VRAM.
+Executing purely In-Memory VRAM Training...
+Epoch 0001 | Train MSE: 0.08653 | Val MSE: 0.03099 (Best: 0.03099)
+Epoch 0010 | Train MSE: 0.01217 | Val MSE: 0.01118 (Best: 0.01118)
+Epoch 0020 | Train MSE: 0.01056 | Val MSE: 0.01087 (Best: 0.00959)
+Epoch 0030 | Train MSE: 0.00995 | Val MSE: 0.00963 (Best: 0.00882)
+Epoch 0040 | Train MSE: 0.00987 | Val MSE: 0.00866 (Best: 0.00866)
+Epoch 0050 | Train MSE: 0.00948 | Val MSE: 0.00923 (Best: 0.00866)
+Epoch 0060 | Train MSE: 0.00951 | Val MSE: 0.00908 (Best: 0.00866)
+Epoch 0070 | Train MSE: 0.00957 | Val MSE: 0.00900 (Best: 0.00851)
+Epoch 0080 | Train MSE: 0.00941 | Val MSE: 0.00889 (Best: 0.00851)
+Epoch 0090 | Train MSE: 0.00961 | Val MSE: 0.00993 (Best: 0.00851)
+Epoch 0100 | Train MSE: 0.00820 | Val MSE: 0.00772 (Best: 0.00772)
+Epoch 0110 | Train MSE: 0.00823 | Val MSE: 0.00784 (Best: 0.00759)
+Epoch 0120 | Train MSE: 0.00827 | Val MSE: 0.00805 (Best: 0.00759)
+Epoch 0130 | Train MSE: 0.00824 | Val MSE: 0.00806 (Best: 0.00757)
+Epoch 0140 | Train MSE: 0.00816 | Val MSE: 0.00780 (Best: 0.00750)
+Epoch 0150 | Train MSE: 0.00811 | Val MSE: 0.00791 (Best: 0.00750)
+Epoch 0160 | Train MSE: 0.00808 | Val MSE: 0.00752 (Best: 0.00750)
+Epoch 0170 | Train MSE: 0.00750 | Val MSE: 0.00749 (Best: 0.00734)
+Epoch 0180 | Train MSE: 0.00745 | Val MSE: 0.00732 (Best: 0.00710)
+Epoch 0190 | Train MSE: 0.00744 | Val MSE: 0.00821 (Best: 0.00710)
+Epoch 0200 | Train MSE: 0.00747 | Val MSE: 0.00715 (Best: 0.00710)
+Epoch 0210 | Train MSE: 0.00705 | Val MSE: 0.00690 (Best: 0.00690)
+Epoch 0220 | Train MSE: 0.00702 | Val MSE: 0.00680 (Best: 0.00678)
+Epoch 0230 | Train MSE: 0.00705 | Val MSE: 0.00691 (Best: 0.00678)
+Epoch 0240 | Train MSE: 0.00702 | Val MSE: 0.00686 (Best: 0.00678)
+Epoch 0250 | Train MSE: 0.00680 | Val MSE: 0.00668 (Best: 0.00663)
+Epoch 0260 | Train MSE: 0.00679 | Val MSE: 0.00662 (Best: 0.00661)
+Epoch 0270 | Train MSE: 0.00679 | Val MSE: 0.00666 (Best: 0.00661)
+Epoch 0280 | Train MSE: 0.00675 | Val MSE: 0.00662 (Best: 0.00661)
+Epoch 0290 | Train MSE: 0.00663 | Val MSE: 0.00650 (Best: 0.00650)
+Epoch 0300 | Train MSE: 0.00661 | Val MSE: 0.00655 (Best: 0.00650)
+Epoch 0310 | Train MSE: 0.00662 | Val MSE: 0.00652 (Best: 0.00649)
+Epoch 0320 | Train MSE: 0.00662 | Val MSE: 0.00652 (Best: 0.00648)
+Epoch 0330 | Train MSE: 0.00660 | Val MSE: 0.00651 (Best: 0.00648)
+Epoch 0340 | Train MSE: 0.00659 | Val MSE: 0.00651 (Best: 0.00647)
+Epoch 0350 | Train MSE: 0.00657 | Val MSE: 0.00650 (Best: 0.00645)
+Epoch 0360 | Train MSE: 0.00658 | Val MSE: 0.00653 (Best: 0.00645)
+Epoch 0370 | Train MSE: 0.00658 | Val MSE: 0.00652 (Best: 0.00645)
+Epoch 0380 | Train MSE: 0.00655 | Val MSE: 0.00648 (Best: 0.00644)
+Epoch 0390 | Train MSE: 0.00657 | Val MSE: 0.00648 (Best: 0.00644)
+Epoch 0400 | Train MSE: 0.00654 | Val MSE: 0.00656 (Best: 0.00644)
+Epoch 0410 | Train MSE: 0.00654 | Val MSE: 0.00648 (Best: 0.00643)
+Epoch 0420 | Train MSE: 0.00655 | Val MSE: 0.00646 (Best: 0.00641)
+Epoch 0430 | Train MSE: 0.00655 | Val MSE: 0.00648 (Best: 0.00641)
+Epoch 0440 | Train MSE: 0.00653 | Val MSE: 0.00643 (Best: 0.00641)
+Epoch 0450 | Train MSE: 0.00653 | Val MSE: 0.00643 (Best: 0.00641)
+Epoch 0460 | Train MSE: 0.00653 | Val MSE: 0.00646 (Best: 0.00641)
+Epoch 0470 | Train MSE: 0.00652 | Val MSE: 0.00641 (Best: 0.00641)
+Epoch 0480 | Train MSE: 0.00652 | Val MSE: 0.00648 (Best: 0.00640)
+Epoch 0490 | Train MSE: 0.00651 | Val MSE: 0.00643 (Best: 0.00640)
+Epoch 0500 | Train MSE: 0.00650 | Val MSE: 0.00646 (Best: 0.00640)
+Epoch 0510 | Train MSE: 0.00641 | Val MSE: 0.00636 (Best: 0.00634)
+Epoch 0520 | Train MSE: 0.00642 | Val MSE: 0.00638 (Best: 0.00634)
+Epoch 0530 | Train MSE: 0.00642 | Val MSE: 0.00640 (Best: 0.00633)
+Epoch 0540 | Train MSE: 0.00641 | Val MSE: 0.00636 (Best: 0.00633)
+Epoch 0550 | Train MSE: 0.00643 | Val MSE: 0.00635 (Best: 0.00633)
+Epoch 0560 | Train MSE: 0.00638 | Val MSE: 0.00631 (Best: 0.00631)
+Epoch 0570 | Train MSE: 0.00636 | Val MSE: 0.00630 (Best: 0.00630)
+Epoch 0580 | Train MSE: 0.00635 | Val MSE: 0.00632 (Best: 0.00630)
+Epoch 0590 | Train MSE: 0.00637 | Val MSE: 0.00631 (Best: 0.00630)
+Epoch 0600 | Train MSE: 0.00636 | Val MSE: 0.00631 (Best: 0.00630)
+Epoch 0610 | Train MSE: 0.00636 | Val MSE: 0.00631 (Best: 0.00630)
+Epoch 0620 | Train MSE: 0.00636 | Val MSE: 0.00630 (Best: 0.00629)
+Epoch 0630 | Train MSE: 0.00635 | Val MSE: 0.00630 (Best: 0.00629)
+Epoch 0640 | Train MSE: 0.00636 | Val MSE: 0.00631 (Best: 0.00628)
+Epoch 0650 | Train MSE: 0.00635 | Val MSE: 0.00630 (Best: 0.00628)
+Epoch 0660 | Train MSE: 0.00633 | Val MSE: 0.00631 (Best: 0.00628)
+Epoch 0670 | Train MSE: 0.00635 | Val MSE: 0.00630 (Best: 0.00627)
+Epoch 0680 | Train MSE: 0.00634 | Val MSE: 0.00629 (Best: 0.00627)
+Epoch 0690 | Train MSE: 0.00634 | Val MSE: 0.00629 (Best: 0.00627)
+Epoch 0700 | Train MSE: 0.00632 | Val MSE: 0.00630 (Best: 0.00627)
+Epoch 0710 | Train MSE: 0.00633 | Val MSE: 0.00628 (Best: 0.00627)
+Epoch 0720 | Train MSE: 0.00633 | Val MSE: 0.00631 (Best: 0.00627)
+Epoch 0730 | Train MSE: 0.00629 | Val MSE: 0.00626 (Best: 0.00626)
+Epoch 0740 | Train MSE: 0.00631 | Val MSE: 0.00627 (Best: 0.00625)
+Epoch 0750 | Train MSE: 0.00631 | Val MSE: 0.00626 (Best: 0.00625)
+Epoch 0760 | Train MSE: 0.00628 | Val MSE: 0.00625 (Best: 0.00625)
+Epoch 0770 | Train MSE: 0.00631 | Val MSE: 0.00627 (Best: 0.00625)
+Epoch 0780 | Train MSE: 0.00629 | Val MSE: 0.00625 (Best: 0.00625)
+Epoch 0790 | Train MSE: 0.00629 | Val MSE: 0.00625 (Best: 0.00625)
+Epoch 0800 | Train MSE: 0.00629 | Val MSE: 0.00625 (Best: 0.00625)
+Epoch 0810 | Train MSE: 0.00630 | Val MSE: 0.00625 (Best: 0.00625)
+Epoch 0820 | Train MSE: 0.00628 | Val MSE: 0.00625 (Best: 0.00625)
+Epoch 0830 | Train MSE: 0.00628 | Val MSE: 0.00626 (Best: 0.00624)
+Epoch 0840 | Train MSE: 0.00627 | Val MSE: 0.00624 (Best: 0.00624)
+Epoch 0850 | Train MSE: 0.00628 | Val MSE: 0.00626 (Best: 0.00624)
+Epoch 0860 | Train MSE: 0.00626 | Val MSE: 0.00626 (Best: 0.00624)
+Epoch 0870 | Train MSE: 0.00626 | Val MSE: 0.00624 (Best: 0.00624)
+Epoch 0880 | Train MSE: 0.00628 | Val MSE: 0.00624 (Best: 0.00624)
+Epoch 0890 | Train MSE: 0.00627 | Val MSE: 0.00624 (Best: 0.00624)
+Epoch 0900 | Train MSE: 0.00627 | Val MSE: 0.00625 (Best: 0.00623)
+Epoch 0910 | Train MSE: 0.00627 | Val MSE: 0.00623 (Best: 0.00623)
+Epoch 0920 | Train MSE: 0.00628 | Val MSE: 0.00623 (Best: 0.00623)
+Epoch 0930 | Train MSE: 0.00627 | Val MSE: 0.00624 (Best: 0.00623)
+Epoch 0940 | Train MSE: 0.00626 | Val MSE: 0.00623 (Best: 0.00623)
+Epoch 0950 | Train MSE: 0.00624 | Val MSE: 0.00623 (Best: 0.00623)
+Epoch 0960 | Train MSE: 0.00627 | Val MSE: 0.00624 (Best: 0.00622)
+Epoch 0970 | Train MSE: 0.00627 | Val MSE: 0.00622 (Best: 0.00622)
+Epoch 0980 | Train MSE: 0.00626 | Val MSE: 0.00624 (Best: 0.00622)
+Epoch 0990 | Train MSE: 0.00625 | Val MSE: 0.00623 (Best: 0.00622)
+Epoch 1000 | Train MSE: 0.00625 | Val MSE: 0.00623 (Best: 0.00622)
+Epoch 1010 | Train MSE: 0.00624 | Val MSE: 0.00623 (Best: 0.00622)
+Epoch 1020 | Train MSE: 0.00623 | Val MSE: 0.00623 (Best: 0.00622)
+Epoch 1030 | Train MSE: 0.00626 | Val MSE: 0.00622 (Best: 0.00621)
+Epoch 1040 | Train MSE: 0.00625 | Val MSE: 0.00623 (Best: 0.00621)
+Epoch 1050 | Train MSE: 0.00625 | Val MSE: 0.00622 (Best: 0.00621)
+Epoch 1060 | Train MSE: 0.00625 | Val MSE: 0.00621 (Best: 0.00621)
+Epoch 1070 | Train MSE: 0.00624 | Val MSE: 0.00621 (Best: 0.00621)
+Epoch 1080 | Train MSE: 0.00624 | Val MSE: 0.00621 (Best: 0.00621)
+Epoch 1090 | Train MSE: 0.00623 | Val MSE: 0.00622 (Best: 0.00621)
+Epoch 1100 | Train MSE: 0.00623 | Val MSE: 0.00622 (Best: 0.00621)
+Epoch 1110 | Train MSE: 0.00623 | Val MSE: 0.00620 (Best: 0.00620)
+Epoch 1120 | Train MSE: 0.00623 | Val MSE: 0.00620 (Best: 0.00620)
+Epoch 1130 | Train MSE: 0.00623 | Val MSE: 0.00620 (Best: 0.00620)
+Epoch 1140 | Train MSE: 0.00622 | Val MSE: 0.00620 (Best: 0.00620)
+Epoch 1150 | Train MSE: 0.00623 | Val MSE: 0.00620 (Best: 0.00620)
+Epoch 1160 | Train MSE: 0.00621 | Val MSE: 0.00620 (Best: 0.00619)
+Epoch 1170 | Train MSE: 0.00620 | Val MSE: 0.00620 (Best: 0.00619)
+Epoch 1180 | Train MSE: 0.00621 | Val MSE: 0.00620 (Best: 0.00619)
+Epoch 1190 | Train MSE: 0.00619 | Val MSE: 0.00620 (Best: 0.00619)
+Epoch 1200 | Train MSE: 0.00621 | Val MSE: 0.00620 (Best: 0.00619)
+Epoch 1210 | Train MSE: 0.00621 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1220 | Train MSE: 0.00620 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1230 | Train MSE: 0.00620 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1240 | Train MSE: 0.00619 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1250 | Train MSE: 0.00620 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1260 | Train MSE: 0.00620 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1270 | Train MSE: 0.00622 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1280 | Train MSE: 0.00619 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1290 | Train MSE: 0.00620 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1300 | Train MSE: 0.00621 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1310 | Train MSE: 0.00619 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1320 | Train MSE: 0.00620 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1330 | Train MSE: 0.00620 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1340 | Train MSE: 0.00619 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1350 | Train MSE: 0.00619 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1360 | Train MSE: 0.00622 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1370 | Train MSE: 0.00620 | Val MSE: 0.00619 (Best: 0.00619)
+Epoch 1380 | Train MSE: 0.00619 | Val MSE: 0.00619 (Best: 0.00619)
+Early stopping triggered at Epoch 1385. Best Val MSE: 0.00619
+Run complete. Checkpoint saved as 'best_sage_gnn.pth'.
+training complete for physics based sage gnn
+Targeting isolated GPU. PyTorch device index: cuda
+Loading model, test graphs, and scalers...
+Running inferences...
+Inverting scaling and transformations...
+Passing combined results to vnz.visualize...
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.6/gnnlessbatch/plots
+
+--- Standard Location Metrics ---
+GraphSAGE -> MAE: [0.37477967 0.36810255] | MSE: [0.42064387 0.41383979]
+
+--- Location Error Statistics (Euclidean Distance) ---
+GraphSAGE:
+  MSE:     0.8344836525425763
+  Mean:    0.5840594523938663
+  Median:  0.40726694184577783
+  Minimum: 0.0003698737692179193
+  Maximum: 11.00564350717441
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.6/gnnlessbatch/plots
+
+--- Intensity Prediction Metrics ---
+GraphSAGE:
+  MSE: 324572.54125590983 µCi*µCi
+  MAE:   322.89149713269177 µCi
+  NRMSE: 0.07496219514137743
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+ Testing and Visualization Complete!

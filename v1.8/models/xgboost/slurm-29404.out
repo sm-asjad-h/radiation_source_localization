@@ -1,0 +1,39 @@
+
+TRAINING XGBRegressor
+ Training XGBRegressor Location
+Completed in 2.07 seconds.
+ Training XGBRegressor Intensity
+Completed in 0.63 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.6/models/xgboost/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [0.90172296 0.9164531 ] | MSE: [1.89423518 1.94159876]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     3.8358339422032857
+  Mean:    1.4360289522269885
+  Median:  1.062136201640455
+  Minimum: 0.0013594737604499028
+  Maximum: 17.358299840320882
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.6/models/xgboost/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 649343.4032282407 µCi*µCi
+  MAE:   506.45629288722523 µCi
+  NRMSE: 0.10602874577791087
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+

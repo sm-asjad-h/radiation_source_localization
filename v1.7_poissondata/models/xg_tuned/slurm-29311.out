@@ -1,0 +1,47 @@
+/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/xgboost/core.py:774: UserWarning: [13:01:19] WARNING: /workspace/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
+
+TRAINING XGBRegressor
+ Training XGBRegressor Location
+Completed in 7.12 seconds.
+ Training XGBRegressor Intensity
+Completed in 2.39 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.6_poissondata/models/xg_tuned/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [7.76660995 7.6885128 ] | MSE: [99.5612693  98.51993895]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     198.0812082538355
+  Mean:    11.43917085025647
+  Median:  9.998843692837148
+  Minimum: 0.023092203033847642
+  Maximum: 40.80357996468476
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.6_poissondata/models/xg_tuned/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 5313109.110051705 µCi*µCi
+  MAE:   1929.248307403876 µCi
+  NRMSE: 0.303291874349778
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+

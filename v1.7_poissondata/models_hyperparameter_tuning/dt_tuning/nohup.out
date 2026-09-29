@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "dt_tuning.py", line 5, in <module>
+    import optuna
+ModuleNotFoundError: No module named 'optuna'
+ Tuning Script Running In: /home/lus04/trainee4/radiation_source_localization/v1.4/models_hyperparameter_tuning/dt_tuning
+ Loading Dataset From: /home/lus04/trainee4/radiation_source_localization/v1.4/dataset/dataset.csv
+ Config Will Be Saved To: /home/lus04/trainee4/radiation_source_localization/v1.4/models_hyperparameter_tuning/dt_tuning/config/config.json
+
+
+ Starting tuning with optuna
+ Tuning Decision Tree 
+    Location params...
+      Early Stopping: No improvement for 30 trials.
+      Location params: {'max_depth': 47, 'min_samples_split': 9, 'min_samples_leaf': 16}
+   Intensity params
+      Early Stopping: No improvement for 30 trials.
+      Intensity params: {'max_depth': 15, 'min_samples_split': 30, 'min_samples_leaf': 20}
+   Decision Tree fully tuned in 13.03 mins.
+
+tuning done
+   /home/lus04/trainee4/radiation_source_localization/v1.4/models_hyperparameter_tuning/dt_tuning/config/config.json

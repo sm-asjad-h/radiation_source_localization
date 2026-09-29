@@ -1,0 +1,42 @@
+Loading Test Data...
+Loading model for source_x...
+Loading model for source_y...
+Loading model for I_0...
+
+Formatting predictions...
+plotting...
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.4/modelauml/plots
+
+--- Standard Location Metrics ---
+AutoGluon (Test Run) -> MAE: [0.30128333 0.29562065] | MSE: [0.39432177 0.38926816]
+
+--- Location Error Statistics (Euclidean Distance) ---
+AutoGluon (Test Run):
+  MSE:     0.7835918094356803
+  Mean:    0.46939762153376213
+  Median:  0.26843096261276933
+  Minimum: 0.002397895311803162
+  Maximum: 12.91881956499441
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.4/modelauml/plots
+
+--- Intensity Prediction Metrics ---
+AutoGluon (Test Run):
+  MSE: 250622.1524561841 µCi*µCi
+  MAE:   222.94953197901646 µCi
+  NRMSE: 0.06587128498202569
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+ All plots generated and saved!

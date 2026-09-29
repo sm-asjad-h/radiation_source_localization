@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "rf_tuning.py", line 5, in <module>
+    import optuna
+ModuleNotFoundError: No module named 'optuna'
+ Tuning Script Running In: /home/lus04/trainee4/radiation_source_localization/v1.4/models_hyperparameter_tuning/rf_tuning
+ Loading Dataset From: /home/lus04/trainee4/radiation_source_localization/v1.4/dataset/dataset.csv
+ Config Will Be Saved To: /home/lus04/trainee4/radiation_source_localization/v1.4/models_hyperparameter_tuning/rf_tuning/config/config.json
+
+
+ Starting tuning with optuna
+ Tuning Random Forest 
+    Location params...
+      Early Stopping: No improvement for 30 trials.
+      Location params: {'n_estimators': 500, 'max_depth': 50, 'min_samples_split': 2}
+   Intensity params
+      Early Stopping: No improvement for 30 trials.
+      Intensity params: {'n_estimators': 500, 'max_depth': 37, 'min_samples_split': 2}
+   Random Forest fully tuned in 78.59 mins.
+
+tuning done
+   /home/lus04/trainee4/radiation_source_localization/v1.4/models_hyperparameter_tuning/rf_tuning/config/config.json

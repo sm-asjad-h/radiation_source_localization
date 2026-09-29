@@ -1,0 +1,39 @@
+
+TRAINING RandomForestRegressor
+ Training RandomForestRegressor Location
+Completed in 1519.94 seconds.
+ Training RandomForestRegressor Intensity
+Completed in 1167.79 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.4/models/rf_tuned/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [1.15994325 1.13437114] | MSE: [2.99681422 2.79777492]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     5.794589144594626
+  Mean:    1.7967720084641954
+  Median:  1.3310628048063973
+  Minimum: 0.020408986225278092
+  Maximum: 15.564884637868511
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.4/models/rf_tuned/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 755868.9627526703 µCi*µCi
+  MAE:   593.4296523811005 µCi
+  NRMSE: 0.11439569051706394
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+

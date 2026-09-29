@@ -1,0 +1,1193 @@
+/home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/data_pipeline.py:92: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  y = torch.tensor([targets[i]], dtype=torch.float)
+Loading raw dataset...
+Applying feature engineering...
+Splitting dataset...
+Train size: 240000 | Val size: 45000 | Test size: 15000
+Extracting feature matrices...
+Fitting scalers on training set only...
+Converting processed arrays to graph datasets...
+Data pipeline complete. Graph artifacts saved securely.
+[I 2026-07-13 18:35:41,678] A new study created in RDB with name: gnn_radiation_study
+Targeting GPU: cuda
+Loading graphs from disk...
+
+==================================================
+ INIT OPTUNA HYPERPARAMETER SEARCH 
+==================================================
+Loaded existing study. 0 trials completed out of 100.
+[I 2026-07-13 20:08:02,335] Trial 0 finished with value: 0.17069216402106815 and parameters: {'model_type': 'GAT', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.002358513905308971, 'dropout': 0.15413791503630261, 'heads': 4}. Best is trial 0 with value: 0.17069216402106815.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+GAT -> MAE: [2.30494637 2.33008197] | MSE: [12.97277623 13.29552186]
+
+--- Location Error Statistics (Euclidean Distance) ---
+GAT:
+  MSE:     26.268298088151795
+  Mean:    3.6318116451679594
+  Median:  2.4259090857861554
+  Minimum: 0.0020990718334339487
+  Maximum: 22.57514831944818
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+GAT:
+  MSE: 3985647.0411567492 µCi*µCi
+  MAE:   1564.316715997422 µCi
+  NRMSE: 0.2626853336361995
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-13 20:52:33,822] Trial 1 finished with value: 0.1690088442934884 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 128, 'lr': 0.0005147517356839854, 'dropout': 0.15367466169772373}. Best is trial 1 with value: 0.1690088442934884.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.28067021 2.30991731] | MSE: [12.80410965 13.11365313]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.917762788173082
+  Mean:    3.6018772713033695
+  Median:  2.406873048993922
+  Minimum: 0.004938045147733033
+  Maximum: 22.753317447949595
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3931832.0806432385 µCi*µCi
+  MAE:   1551.2036067064648 µCi
+  NRMSE: 0.26090589309689355
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-13 21:44:28,441] Trial 2 finished with value: 0.16841085756354862 and parameters: {'model_type': 'SAGE', 'num_layers': 4, 'hidden_dim': 256, 'lr': 0.0017852343444375188, 'dropout': 0.1094182901595473}. Best is trial 2 with value: 0.16841085756354862.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.26913682 2.30361135] | MSE: [12.78640832 13.13337275]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.91978106592817
+  Mean:    3.591489553424236
+  Median:  2.383997752774558
+  Minimum: 0.00048588502175725884
+  Maximum: 22.86945055683068
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3936371.8076280383 µCi*µCi
+  MAE:   1547.5432192598616 µCi
+  NRMSE: 0.26105647173361446
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-13 22:25:38,298] Trial 3 finished with value: 0.16966019296646118 and parameters: {'model_type': 'SAGE', 'num_layers': 2, 'hidden_dim': 128, 'lr': 0.00030403675744917986, 'dropout': 0.21587276061511293}. Best is trial 2 with value: 0.16841085756354862.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.30221838 2.33796566] | MSE: [12.89021463 13.18552724]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     26.0757418641737
+  Mean:    3.6421389239388033
+  Median:  2.467195377322615
+  Minimum: 0.0023575598997389344
+  Maximum: 23.047410121237036
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3932974.0946905 µCi*µCi
+  MAE:   1547.2108756615332 µCi
+  NRMSE: 0.2609437808495006
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-13 23:23:52,614] Trial 4 finished with value: 0.17259864896933239 and parameters: {'model_type': 'GCN', 'num_layers': 5, 'hidden_dim': 512, 'lr': 0.0015997705095092294, 'dropout': 0.041149723605390334}. Best is trial 2 with value: 0.16841085756354862.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+GCN -> MAE: [2.34472946 2.37018236] | MSE: [13.2007024 13.4522979]
+
+--- Location Error Statistics (Euclidean Distance) ---
+GCN:
+  MSE:     26.653000299998574
+  Mean:    3.6990647625491873
+  Median:  2.5167660219362453
+  Minimum: 0.000990810593575455
+  Maximum: 22.74043101989736
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+GCN:
+  MSE: 4016349.7088831244 µCi*µCi
+  MAE:   1567.5922365694444 µCi
+  NRMSE: 0.26369516565392465
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 00:05:13,509] Trial 5 finished with value: 0.16993399930000305 and parameters: {'model_type': 'GAT', 'num_layers': 4, 'hidden_dim': 256, 'lr': 0.000568890369807497, 'dropout': 0.044129398147533166, 'heads': 4}. Best is trial 2 with value: 0.16841085756354862.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+GAT -> MAE: [2.29243136 2.32520015] | MSE: [12.92518233 13.26702497]
+
+--- Location Error Statistics (Euclidean Distance) ---
+GAT:
+  MSE:     26.192207297390265
+  Mean:    3.620901194953616
+  Median:  2.409104978077117
+  Minimum: 0.0016351866615055357
+  Maximum: 22.883178820160186
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+GAT:
+  MSE: 3911804.5001491704 µCi*µCi
+  MAE:   1545.4266946013224 µCi
+  NRMSE: 0.26024055633826065
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 00:09:23,728] Trial 6 pruned. 
+[I 2026-07-14 00:12:15,097] Trial 7 pruned. 
+[I 2026-07-14 00:15:40,690] Trial 8 pruned. 
+[I 2026-07-14 01:01:45,304] Trial 9 finished with value: 0.16905497744348313 and parameters: {'model_type': 'SAGE', 'num_layers': 3, 'hidden_dim': 256, 'lr': 0.0002820238676216494, 'dropout': 0.34185027425271164}. Best is trial 2 with value: 0.16841085756354862.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.28106659 2.30777936] | MSE: [12.86384298 13.15611132]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     26.019954302492135
+  Mean:    3.605801805649109
+  Median:  2.4035867732407588
+  Minimum: 0.0002498085345750831
+  Maximum: 22.97895544878699
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3952460.463055624 µCi*µCi
+  MAE:   1555.11437683107 µCi
+  NRMSE: 0.2615894199645498
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 01:04:26,160] Trial 10 pruned. 
+[I 2026-07-14 01:08:51,553] Trial 11 pruned. 
+[I 2026-07-14 01:12:20,161] Trial 12 pruned. 
+[I 2026-07-14 01:18:50,130] Trial 13 pruned. 
+[I 2026-07-14 01:40:22,771] Trial 14 pruned. 
+[I 2026-07-14 01:43:48,957] Trial 15 pruned. 
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+[I 2026-07-14 02:23:25,277] Trial 16 finished with value: 0.16874835161368051 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 256, 'lr': 0.0005764709843059374, 'dropout': 0.1749107990578165}. Best is trial 2 with value: 0.16841085756354862.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.26810338 2.29370576] | MSE: [12.77849794 13.18364929]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.962147235507263
+  Mean:    3.583686914394595
+  Median:  2.353866469606717
+  Minimum: 0.0019445410550968751
+  Maximum: 22.744251756289803
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3915560.1489904947 µCi*µCi
+  MAE:   1547.4294738211383 µCi
+  NRMSE: 0.26036545236352204
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 02:26:52,341] Trial 17 pruned. 
+[I 2026-07-14 02:34:15,829] Trial 18 pruned. 
+[I 2026-07-14 02:37:50,524] Trial 19 pruned. 
+[I 2026-07-14 02:41:14,678] Trial 20 pruned. 
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+[I 2026-07-14 03:31:58,668] Trial 21 finished with value: 0.16888673819435968 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 128, 'lr': 0.0004421926333250452, 'dropout': 0.14940444997320598}. Best is trial 2 with value: 0.16841085756354862.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.28859189 2.31459341] | MSE: [12.83136167 13.16265374]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.99401541143601
+  Mean:    3.6102699372394733
+  Median:  2.419309748437252
+  Minimum: 0.0015709372880421005
+  Maximum: 22.810628210726186
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3946964.944417682 µCi*µCi
+  MAE:   1556.0395881017494 µCi
+  NRMSE: 0.2614074991591665
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 04:03:44,598] Trial 22 finished with value: 0.16869976556566027 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 256, 'lr': 0.000398956382027287, 'dropout': 0.17820292933037954}. Best is trial 2 with value: 0.16841085756354862.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.2737194  2.30819498] | MSE: [12.8494     13.14742387]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.996823872420503
+  Mean:    3.598793803245172
+  Median:  2.399008968982374
+  Minimum: 0.01954686261882544
+  Maximum: 22.83262788958299
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 4025978.470214559 µCi*µCi
+  MAE:   1564.7093077379395 µCi
+  NRMSE: 0.2640110666636707
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 04:10:54,183] Trial 23 pruned. 
+[I 2026-07-14 04:40:37,473] Trial 24 finished with value: 0.16890057597690158 and parameters: {'model_type': 'SAGE', 'num_layers': 5, 'hidden_dim': 256, 'lr': 0.00019930511739327697, 'dropout': 0.11378261856077992}. Best is trial 2 with value: 0.16841085756354862.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.29105745 2.31352532] | MSE: [12.84623589 13.21895609]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     26.065191976527885
+  Mean:    3.611508226691628
+  Median:  2.3990503249389623
+  Minimum: 0.004303673385095736
+  Maximum: 23.084715256268773
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3903916.3983236155 µCi*µCi
+  MAE:   1543.9189219794785 µCi
+  NRMSE: 0.2599780381174277
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 05:16:54,798] Trial 25 finished with value: 0.16839005191326142 and parameters: {'model_type': 'SAGE', 'num_layers': 4, 'hidden_dim': 256, 'lr': 0.0003909848011669648, 'dropout': 0.22188083078677046}. Best is trial 25 with value: 0.16839005191326142.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.27035753 2.30144817] | MSE: [12.76571047 13.1456102 ]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.91132066534594
+  Mean:    3.5900863083090413
+  Median:  2.3817169144743007
+  Minimum: 0.0031084874457410513
+  Maximum: 22.911188799491754
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3940477.90143691 µCi*µCi
+  MAE:   1552.2469211013379 µCi
+  NRMSE: 0.2611925923829693
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 05:57:19,289] Trial 26 finished with value: 0.16818789902793035 and parameters: {'model_type': 'SAGE', 'num_layers': 4, 'hidden_dim': 256, 'lr': 0.00039122194872683746, 'dropout': 0.2233511072788146}. Best is trial 26 with value: 0.16818789902793035.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.26033041 2.2996692 ] | MSE: [12.77746547 13.12580486]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.903270325630864
+  Mean:    3.582189854164556
+  Median:  2.3641972638423523
+  Minimum: 0.0004432146918573645
+  Maximum: 22.930953222045375
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3935980.4195075347 µCi*µCi
+  MAE:   1549.7091341846758 µCi
+  NRMSE: 0.26104349316518866
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 06:00:11,948] Trial 27 pruned. 
+[I 2026-07-14 06:18:52,698] Trial 28 pruned. 
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x15167bc645e0>
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1654, in __del__
+    self._shutdown_workers()
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1637, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: can only test a child process
+[I 2026-07-14 06:22:07,033] Trial 29 pruned. 
+[I 2026-07-14 06:26:09,019] Trial 30 pruned. 
+[I 2026-07-14 07:12:15,506] Trial 31 finished with value: 0.16824990569750467 and parameters: {'model_type': 'SAGE', 'num_layers': 4, 'hidden_dim': 256, 'lr': 0.0003642514841203699, 'dropout': 0.19741903720170761}. Best is trial 26 with value: 0.16818789902793035.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.2694696  2.29923639] | MSE: [12.78181232 13.13136958]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.91318189545459
+  Mean:    3.5874796702212643
+  Median:  2.3644490058621757
+  Minimum: 0.0004137516641679972
+  Maximum: 22.90862645255417
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3956157.435619041 µCi*µCi
+  MAE:   1552.1957266548648 µCi
+  NRMSE: 0.26171173148154153
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 07:54:28,506] Trial 32 finished with value: 0.1682826751364602 and parameters: {'model_type': 'SAGE', 'num_layers': 4, 'hidden_dim': 256, 'lr': 0.0006965313906898288, 'dropout': 0.20651521465644881}. Best is trial 26 with value: 0.16818789902793035.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.26466113 2.30153536] | MSE: [12.78478145 13.15530987]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.940091320017796
+  Mean:    3.5874196029778394
+  Median:  2.374626604952426
+  Minimum: 0.0005172793140413642
+  Maximum: 22.906998099530583
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3932916.383711361 µCi*µCi
+  MAE:   1549.8311570508415 µCi
+  NRMSE: 0.26094186634714506
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 08:40:09,264] Trial 33 finished with value: 0.16824114414850871 and parameters: {'model_type': 'SAGE', 'num_layers': 4, 'hidden_dim': 256, 'lr': 0.0007130774581741307, 'dropout': 0.20919684898933258}. Best is trial 26 with value: 0.16818789902793035.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.26484774 2.29585003] | MSE: [12.7656185  13.16341606]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.929034559396957
+  Mean:    3.5846344153754295
+  Median:  2.3730967275537047
+  Minimum: 3.1313775372232217e-05
+  Maximum: 22.84004766062883
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3905284.897275217 µCi*µCi
+  MAE:   1545.300689924667 µCi
+  NRMSE: 0.2600236011447264
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 08:46:47,096] Trial 34 pruned. 
+[I 2026-07-14 09:30:05,551] Trial 35 finished with value: 0.16836426204840343 and parameters: {'model_type': 'SAGE', 'num_layers': 4, 'hidden_dim': 256, 'lr': 0.0003309208669285619, 'dropout': 0.2041556240672956}. Best is trial 26 with value: 0.16818789902793035.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.26761759 2.29461793] | MSE: [12.80118973 13.10350741]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.904697137230183
+  Mean:    3.583675711104195
+  Median:  2.372083423925765
+  Minimum: 0.00018923017866273023
+  Maximum: 22.970398179518458
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3956653.1927913474 µCi*µCi
+  MAE:   1553.359122529539 µCi
+  NRMSE: 0.26172812888301417
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 10:05:10,276] Trial 36 finished with value: 0.16806532385084363 and parameters: {'model_type': 'SAGE', 'num_layers': 4, 'hidden_dim': 512, 'lr': 0.0002395852277975752, 'dropout': 0.16089587575836953}. Best is trial 36 with value: 0.16806532385084363.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.25065287 2.29675419] | MSE: [12.74741008 13.11050668]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.857916757892124
+  Mean:    3.5758000456861088
+  Median:  2.3621724718401893
+  Minimum: 0.009125778867858328
+  Maximum: 22.886761179140365
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3852118.2134482563 µCi*µCi
+  MAE:   1535.058536170518 µCi
+  NRMSE: 0.25824755047094383
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 10:39:33,588] Trial 37 finished with value: 0.16796385243203904 and parameters: {'model_type': 'SAGE', 'num_layers': 4, 'hidden_dim': 512, 'lr': 0.00022259266068654893, 'dropout': 0.15961355446978703}. Best is trial 37 with value: 0.16796385243203904.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.26883989 2.29700189] | MSE: [12.73480655 13.12942765]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.864234204104047
+  Mean:    3.5836660383310637
+  Median:  2.3872767980590845
+  Minimum: 0.002527848746164707
+  Maximum: 22.853244326945223
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3924591.9678313313 µCi*µCi
+  MAE:   1546.0985698188294 µCi
+  NRMSE: 0.26066556511972405
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 11:24:52,033] Trial 38 finished with value: 0.16791901023917727 and parameters: {'model_type': 'SAGE', 'num_layers': 3, 'hidden_dim': 512, 'lr': 0.00025139683024925073, 'dropout': 0.16659111991577308}. Best is trial 38 with value: 0.16791901023917727.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.26681429 2.2957456 ] | MSE: [12.76214017 13.08457169]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.846711857393533
+  Mean:    3.585238558635346
+  Median:  2.3705127209730303
+  Minimum: 0.0010938532698618146
+  Maximum: 22.997811330477177
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3927344.307389752 µCi*µCi
+  MAE:   1544.232362277378 µCi
+  NRMSE: 0.2607569522511902
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+[I 2026-07-14 11:28:31,470] Trial 39 pruned. 
+[I 2026-07-14 11:31:29,564] Trial 40 pruned. 
+[I 2026-07-14 12:12:46,953] Trial 41 finished with value: 0.1678928313228819 and parameters: {'model_type': 'SAGE', 'num_layers': 3, 'hidden_dim': 512, 'lr': 0.00022881143159720715, 'dropout': 0.13049555148639935}. Best is trial 41 with value: 0.1678928313228819.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Standard Location Metrics ---
+SAGE -> MAE: [2.26576497 2.29905499] | MSE: [12.78348428 13.10864124]
+
+--- Location Error Statistics (Euclidean Distance) ---
+SAGE:
+  MSE:     25.892125520340485
+  Mean:    3.587434416647245
+  Median:  2.3667054477112215
+  Minimum: 0.0013378279820972965
+  Maximum: 23.094222405586777
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/plots
+
+--- Intensity Prediction Metrics ---
+SAGE:
+  MSE: 3924424.5246961107 µCi*µCi
+  MAE:   1544.0877283446216 µCi
+  NRMSE: 0.26066000439833154
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+

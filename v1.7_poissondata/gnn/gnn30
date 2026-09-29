@@ -1,0 +1,19 @@
+Locking all random seeds to 42...
+Targeting isolated GPU. PyTorch device index: cuda
+Loading graphs from storage...
+Configuring dynamic DataLoaders with batch size 1024...
+Executing Dynamic Training Loop...
+Epoch 0001 | LR: 0.002806 | Train MSE: 1.00020 | Val MSE: 1.00250 (Best: 1.00250)
+Epoch 0010 | LR: 0.002806 | Train MSE: 1.00005 | Val MSE: 1.00246 (Best: 1.00242)
+Epoch 0020 | LR: 0.001403 | Train MSE: 1.00003 | Val MSE: 1.00242 (Best: 1.00242)
+Epoch 0030 | LR: 0.000702 | Train MSE: 1.00001 | Val MSE: 1.00244 (Best: 1.00242)
+Epoch 0040 | LR: 0.000351 | Train MSE: 1.00001 | Val MSE: 1.00243 (Best: 1.00242)
+Epoch 0050 | LR: 0.000175 | Train MSE: 1.00000 | Val MSE: 1.00242 (Best: 1.00242)
+Epoch 0060 | LR: 0.000088 | Train MSE: 1.00000 | Val MSE: 1.00242 (Best: 1.00242)
+Epoch 0070 | LR: 0.000044 | Train MSE: 1.00000 | Val MSE: 1.00242 (Best: 1.00242)
+Epoch 0080 | LR: 0.000022 | Train MSE: 1.00000 | Val MSE: 1.00242 (Best: 1.00242)
+Epoch 0090 | LR: 0.000011 | Train MSE: 1.00000 | Val MSE: 1.00242 (Best: 1.00242)
+Epoch 0100 | LR: 0.000005 | Train MSE: 1.00000 | Val MSE: 1.00242 (Best: 1.00242)
+Early stopping triggered at Epoch 108. Best Val MSE: 1.00242
+Run complete. Checkpoint saved as 'best_sage_gnn.pth'.
+training complete for  sage gnn

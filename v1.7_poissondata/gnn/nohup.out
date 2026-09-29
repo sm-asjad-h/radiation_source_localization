@@ -1,0 +1,28 @@
+sh: ./runsage: No such file or directory
+Traceback (most recent call last):
+  File "trainSage.py", line 2, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+training complete for physics based sage gnn
+Traceback (most recent call last):
+  File "testsage.py", line 2, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Targeting PyTorch device: cuda
+Loading validation graphs...
+Loading scaler...
+Running validation inference...
+Inverting scaling to physical units...
+
+==================================================
+ PHYSICAL VALIDATION METRICS (UNSCALED)
+==================================================
+Per-Axis Mean Squared Error (MSE):
+  - X-Axis MSE: 12.6939 units^2
+  - Y-Axis MSE: 12.6125 units^2
+--------------------------------------------------
+Physical Location Error (Euclidean Distance):
+  - Mean Distance Error:   3.5360 units (Average physical miss)
+  - Median Distance Error: 2.3438 units
+  - Distance MSE:          25.3064 units^2
+==================================================

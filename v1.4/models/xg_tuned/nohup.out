@@ -1,0 +1,77 @@
+TRAINING XGBRegressor
+ Training XGBRegressor Location
+Completed in 680.55 seconds.
+ Training XGBRegressor Intensity
+Completed in 299.65 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.4/models/xg_tuned/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [0.8517172  0.83713367] | MSE: [1.694457   1.62244945]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     3.3169064493538594
+  Mean:    1.3315126047339023
+  Median:  0.9583468546555467
+  Minimum: 0.01290457562636112
+  Maximum: 14.61508710813284
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.4/models/xg_tuned/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 643154.1808488193 µCi*µCi
+  MAE:   509.2918001774946 µCi
+  NRMSE: 0.1055222289575486
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
+
+TRAINING XGBRegressor
+ Training XGBRegressor Location
+Completed in 234.02 seconds.
+ Training XGBRegressor Intensity
+Completed in 99.17 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.4/models/xg_tuned/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [0.84692865 0.83489175] | MSE: [1.67611807 1.60709798]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     3.2832160483399697
+  Mean:    1.3258232667255034
+  Median:  0.9567652894540106
+  Minimum: 0.00932399967849193
+  Maximum: 14.069510923379715
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.4/models/xg_tuned/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 639052.0796299595 µCi*µCi
+  MAE:   506.1246669592742 µCi
+  NRMSE: 0.10518517503063377
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+

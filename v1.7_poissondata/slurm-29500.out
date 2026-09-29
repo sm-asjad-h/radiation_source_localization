@@ -1,0 +1,17 @@
+python: can't open file '/home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/datapipeline.py': [Errno 2] No such file or directory
+Targeting GPU: cuda
+Loading graphs from disk...
+Traceback (most recent call last):
+  File "/home/lus04/trainee4/radiation_source_localization/v1.7_poissondata/gnn_optuna_tuning.py", line 105, in <module>
+    train_graphs = torch.load('graph_data/train_graphs.pt', weights_only=False)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lus04/trainee4/.conda/envs/aenv/lib/python3.12/site-packages/torch/serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'graph_data/train_graphs.pt'

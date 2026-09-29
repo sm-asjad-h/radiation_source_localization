@@ -1,0 +1,16 @@
+{
+    "Location": {
+        "Decision Tree": {
+            "max_depth": 47,
+            "min_samples_split": 9,
+            "min_samples_leaf": 16
+        }
+    },
+    "Intensity": {
+        "Decision Tree": {
+            "max_depth": 15,
+            "min_samples_split": 30,
+            "min_samples_leaf": 20
+        }
+    }
+}

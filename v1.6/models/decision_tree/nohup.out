@@ -1,0 +1,39 @@
+
+TRAINING DecisionTreeRegressor
+ Training DecisionTreeRegressor Location
+Completed in 6.19 seconds.
+ Training DecisionTreeRegressor Intensity
+Completed in 4.92 seconds.
+
+Saving location plots to: /home/lus04/trainee4/radiation_source_localization/v1.6_poissondata/models/decision_tree/plots
+
+--- Standard Location Metrics ---
+Current_Model -> MAE: [1.99299812 1.96599223] | MSE: [11.33222482 11.19691081]
+
+--- Location Error Statistics (Euclidean Distance) ---
+Current_Model:
+  MSE:     22.52913562157806
+  Mean:    3.267730311333509
+  Median:  2.2812272305079233
+  Minimum: 9.6969891098867e-10
+  Maximum: 24.832128727306507
+
+--- Generating Individual Model Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Location Error vs Source Distance Plots ---
+All location plots saved successfully.
+
+
+Saving intensity plots to: /home/lus04/trainee4/radiation_source_localization/v1.6_poissondata/models/decision_tree/plots
+
+--- Intensity Prediction Metrics ---
+Current_Model:
+  MSE: 2944071.2912555174 µCi*µCi
+  MAE:   1296.237259094031 µCi
+  NRMSE: 0.22576705550802076
+
+--- Generating Individual Intensity Error Distributions ---
+--- Generating Detector-Specific Error vs True Distance Plots ---
+--- Generating Intensity Error vs Source Distance Plots ---
+All intensity plots saved successfully.
+
