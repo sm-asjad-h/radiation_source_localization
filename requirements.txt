@@ -1,0 +1,17 @@
+# Data processing and classical machine learning
+numpy
+pandas
+scikit-learn
+xgboost
+
+# Plots
+matplotlib
+seaborn
+
+# Neural networks and graph neural networks
+torch
+torch-geometric
+
+# Hyperparameter tuning and tabular AutoML
+#optuna
+#autogluon.tabular

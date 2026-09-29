@@ -116,4 +116,7 @@ class DynamicGNN(torch.nn.Module):
                 
         x = global_mean_pool(x, batch)
         x = F.relu(self.fc1(x))
-        return self.out(x)        
+        x = self.out(x)
+        x = F.tanh(x)
+        return x        
+    

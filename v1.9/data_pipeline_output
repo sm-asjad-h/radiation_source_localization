@@ -1,0 +1,33 @@
+/home/naushad/Desktop/Asjad_rad/radiation_source_localization/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading raw dataset...
+Traceback (most recent call last):
+  File "/home/naushad/Desktop/Asjad_rad/radiation_source_localization/v1.9/data_pipeline.py", line 118, in <module>
+    run_data_pipeline("/home/lus04/trainee4/radiation_source_localization/v1.6/dataset/dataset.csv")
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/naushad/Desktop/Asjad_rad/radiation_source_localization/v1.9/data_pipeline.py", line 18, in run_data_pipeline
+    df = pd.read_csv(raw_csv_path)
+  File "/home/naushad/Desktop/Asjad_rad/radiation_source_localization/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/naushad/Desktop/Asjad_rad/radiation_source_localization/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/naushad/Desktop/Asjad_rad/radiation_source_localization/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1643, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/naushad/Desktop/Asjad_rad/radiation_source_localization/.venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1907, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/naushad/Desktop/Asjad_rad/radiation_source_localization/.venv/lib/python3.14/site-packages/pandas/io/common.py", line 930, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lus04/trainee4/radiation_source_localization/v1.6/dataset/dataset.csv'

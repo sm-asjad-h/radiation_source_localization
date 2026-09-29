@@ -6,7 +6,7 @@ import torch
 import sys
 from torch_geometric.data import Data
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
 CURRENT_DIR = os.getcwd()
 PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, '..','..'))
 sys.path.append(PROJECT_ROOT)
@@ -64,8 +64,8 @@ def run_data_pipeline(raw_csv_path):
     
     # 5. Leak-Free Scaling Setup
     print("Fitting scalers on training set only...")
-    scaler_x = StandardScaler().fit(X_train_nodes.reshape(-1, X_train_nodes.shape[-1]))
-    scaler_y = StandardScaler().fit(y_train)
+    scaler_x = MinMaxScaler(feature_range=(-1,1)).fit(X_train_nodes.reshape(-1, X_train_nodes.shape[-1]))
+    scaler_y = MinMaxScaler(feature_range=(-1,1)).fit(y_train)
     # ? DELETE THE scaler_e LINE
     
     # Transform all splits
