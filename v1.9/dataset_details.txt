@@ -1,0 +1,4 @@
+area 100x100
+poisson noise added
+no attenuation or other factors
+back_rad=5
